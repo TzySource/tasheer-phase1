@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Detail page</title>
+   <!-- favicon -->
+   <link async defer rel="shortcut icon" type="image/x-icon"
+      href="https://media.umrahme.com/qa/saas/assets/media/logo/favicon.ico">
+   <!-- plugin css -->
+   <link rel="stylesheet" href="../assets/css/tasheer-style-bundle.min.css">
+   <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/tasheer-utility.css">
+   <link rel="stylesheet" href="../assets/css/package-style.min.css">
+   <link rel="stylesheet" href="../assets/css/tasheer-package.css">
+</head>
+
+ <body>
+      <div class="app-content container-xl px-2 px-lg-10">
+         <!-- begin::flight-main -->
+         <div class="flight-modify-main">
+            <!-- begin::modify-name -->
+            <div class="modify-name">
+               <a href="detail.html" class="text-dark d-none d-md-inline-flex back-btn">
+               <img src="../assets/media/icons/back.png" alt="back to page" class="align-top">Back to Package Details</a>
+               <div class="d-flex justify-content-between align-items-center mt-0 my-md-5">
+                  <p class="fs-2x text-dark mb-0 fw-medium d-none d-md-block">Modify your flight</p>
+                  <!-- begin::for mobile -->
+                  <div class="d-block d-md-none">
+                     <a href="detail-80.html" class="text-dark d-flex align-items-center back-btn">
+                        <span class="tz-icon-arrow-left icon-16x d-inline-block"></span>
+                        <div class="fs-4 w-100 text-center fw-medium">Modify Flight</div>
+                     </a>
+                  </div>
+                  <!-- end::for mobile -->
+                  <!-- begin::sort -->
+                  <div class="align-items-center justify-content-end d-flex">
+                     <!-- begin::price-filter -->
+                     <div class="dropdown">
+                        <button class="btn btn-dark-blue text-white d-flex gap-3 align-items-center fs-7 rounded-1"
+                           type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,13">
+                        <span class="fw-normal">Price (low to high) </span>
+                        <span class="tz-icon-arrow-down-white icon-20x d-inline-block"></span>
+                        </button>
+                        <ul class="dropdown-menu p-6 dropdown-menu-end z-index-2">
+                           <li>
+                              <a class="dropdown-item fs-6 rounded-12 p-4 thin-border border border-transparent d-block"
+                                 href="javascript:;">Best</a>
+                           </li>
+                           <li class="mt-2">
+                              <a class="dropdown-item fs-6 rounded-12 p-4 thin-border border border-transparent d-block"
+                                 href="javascript:;">
+                              Price (High to low)
+                              </a>
+                           </li>
+                           <li class="mt-2">
+                              <a class="dropdown-item fs-6 rounded-12 p-4 thin-border border border-transparent d-block"
+                                 href="javascript:;">
+                              Price (Low to high)
+                              </a>
+                           </li>
+                           <li class="mt-2">
+                              <a class="dropdown-item fs-6 active-list rounded-12 p-4 thin-border border border-transparent d-block"
+                                 href="javascript:;">
+                              Distance from city center
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- end::price-filter -->
+                  </div>
+                  <!-- end::sort -->
+               </div>
+               <div class="d-flex align-items-center gap-1 py-5 pt-md-0">
+                  <button class="d-block d-lg-none rounded-8 border border-1 border-secondary px-5 py-3 bg-white position-relative me-5" id="kt_drawer_flight_filter_button1">
+                  <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/list-filter-icon.png"  width="26px" alt="filter-icon" class="" /> <span class="position-absolute top-0 start-100 translate-middle badge badge-circle badge-info">1</span>
+                  </button>
+                  <div class="text-nowrap overflow-scroll hide-scrollbar">
+                     <button type="button" class="btn btn-outline btn-outline-secondary">
+                     Number Of Stops
+                     <img src="../assets/media/icons/close.png" class="mb-1">
+                     </button>
+                     <button type="button" class="btn btn-outline btn-outline-secondary">
+                     Cabin Class 
+                     <img src="../assets/media/icons/close.png" class="mb-1">
+                     </button>
+                     <button type="button" class="btn btn-outline btn-outline-secondary">
+                     Departure Airports
+                     <img src="../assets/media/icons/close.png" class="mb-1">
+                     </button>
+                     <button type="button" class="btn btn-outline btn-outline-secondary">
+                     Arrival Airports
+                     <img src="../assets/media/icons/close.png" class="mb-1">
+                     </button>
+                     <button type="button" class="btn btn-outline btn-outline-secondary">
+                     Airlines
+                     <img src="../assets/media/icons/close.png" class="mb-1">
+                     </button>
+                  </div>
+                  <div class="position-relative px-5 py-3 fw-bold cursor-pointer text-nowrap">Clear All</div>
+               </div>
+            </div>
+            <!-- end::modify-name -->
+            <!-- begin::detail-product -->
+            <div class="detail-product">
+               <!-- begin::row -->
+               <div class="row">
+                  <!-- begin::flight filter -->
+                  <div class="col-12 col-lg-4 col-xl-3">
+                     <div class="d-none d-lg-block position-sticky" style="top: 7rem;">
+                     <div class="d-flex flex-column gap-7 bg-white rounded-2 p-5">
+                        <!-- begin::flight stops -->
+                        <div>
+                           <h5>Number Of Stops</h5>
+                           <div class="d-flex gap-2">
+                              <label class="p-3 border border-1 border-gray-300 rounded-1 cursor-pointer flex-1 text-center filter">
+                                 Direct
+                              </label>
+                              <label class="p-3 border border-1 border-gray-300 rounded-1 cursor-pointer flex-1 text-center filter">
+                                 1 Stop
+                              </label>
+                           </div>
+                        </div>
+                        <!-- end::flight stops -->
+                        <div class="separator"></div>
+                        <!-- begin::flight cabin -->
+                        <div>
+                           <h5>Cabin Class</h5>
+                           <div>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span>Economy</span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span>Business</span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span>First Class</span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack">
+                                 <span>Premium Economy</span>
+                                 <input type="radio" name="class">
+                              </label>
+                           </div>
+                        </div>
+                        <!-- end::flight cabin -->
+                        <div class="separator"></div>
+                        <div>
+                           <h5>Departure Airports</h5>
+                           <form action="">
+                              <label class="d-flex flex-stack mb-3">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mumbai (Bombay), Chhatrapati Shivaji Maharaj International Airport">BOM <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Madinah, Prince Mohammad bin Abdulaziz International Airport">MED <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                                 <input type="radio" name="class">
+                              </label>
+                           </form>
+                           
+                        </div>
+                        <div>
+                           <h5>Arrival Airports</h5>
+                           <form action="">
+                              <label class="d-flex flex-stack mb-3">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mumbai (Bombay), Chhatrapati Shivaji Maharaj International Airport">BOM <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Madinah, Prince Mohammad bin Abdulaziz International Airport">MED <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                                 <input type="radio" name="class">
+                              </label>
+                           </form>
+                           
+                        </div>
+                        <div class="separator"></div>
+                        <div>
+                           <h5>Airlines</h5>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/XY.png" alt="Flynas">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">Flynas</span>
+                              </div>
+                              <input type="checkbox" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/SV.png" alt="Saudia" width="15" height="15">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">Saudia</span>
+                              </div>
+                              <input type="checkbox" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/GF.png" alt="Gulf Air" width="15" height="15">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">Gulf Air</span>
+                              </div>
+                              <input type="checkbox" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/MS.png" alt="EgyptAir" width="15" height="15">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">EgyptAir</span>
+                              </div>
+                              <input type="checkbox" name="class">
+                           </label>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+                  <!-- end::flight filter -->
+                  <!-- begin::flight-options -->
+                  <div class="col-12 col-lg-8 col-xl-9">
+                     <div class="bg-white border border-2 border-info rounded-1 p-4 mt-5">
+                        <div class="row flex-column-reverse flex-md-row mx-0">
+                           <div class="col-12 col-md-8">
+                              <div class="row align-items-center mx-0">
+                                 <div class="col-12 col-md-2">
+                                    <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                 </div>
+                                 <div class="col-12 col-md-10">
+                                    <div class="row d-flex justify-content-between align-items-center flex-1 flight-check">
+                                       <!-- begin::check-in -->
+                                       <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-3 fw-bold">05:20</span>
+                                          <p class="text-secondary fs-7 text-wrap mb-0">Aug 30, Mumbai</p>
+                                       </div>
+                                       <!-- end::check-in -->
+                                       <!-- begin::flight-path -->
+                                       <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">2h 45m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                       </div>
+                                       <!-- end::flight-path -->
+                                       <!-- begin::check-out -->
+                                       <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-3 fw-bold">17:50</span>
+                                          <p class="text-secondary mb-0 fs-7 text-wrap">Aug 30, Jeddah</p>
+                                       </div>
+                                       <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row align-items-center mx-0 mt-7">
+                                 <div class="col-12 col-md-2">
+                                    <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                 </div>
+                                 <div class="col-12 col-md-10">
+                                    <div class="row d-flex justify-content-between align-items-center flex-1 flight-check">
+                                       <!-- begin::check-in -->
+                                       <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-3 fw-bold">04:10</span>
+                                          <p class="text-secondary fs-7 text-wrap mb-0">Sept 01, Jeddah</p>
+                                       </div>
+                                       <!-- end::check-in -->
+                                       <!-- begin::flight-path -->
+                                       <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">2h 45m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                       </div>
+                                       <!-- end::flight-path -->
+                                       <!-- begin::check-out -->
+                                       <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-3 fw-bold">14:15</span>
+                                          <p class="text-secondary mb-0 fs-7 text-wrap">Sept 01, Mumbai</p>
+                                       </div>
+                                       <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-md-4">
+                              <div class="d-flex justify-content-between flex-row flex-md-column h-100">
+                                 <div class="badge badge-info fs-6 ms-auto">Selected</div>
+                                 <div class="text-end text-info cursor-pointer ms-auto d-none d-md-block" data-bs-toggle="collapse" href="#arrivalFlight" role="button" aria-expanded="false" aria-controls="collapseExample">Flight Detail</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text-end text-info cursor-pointer ms-auto d-md-none mt-2" data-bs-toggle="collapse" href="#arrivalFlight" role="button" aria-expanded="false" aria-controls="collapseExample">Flight Detail</div>
+                        <div class="collapse" id="arrivalFlight">
+                           <div class="separator my-3"></div>
+                              <!-- begin::departure flight -->
+                              <div>
+                                 <div class="d-flex flex-column-reverse flex-md-row flex-stack align-items-start gap-3 mb-5">
+                                    <p><span class="fs-4 fw-bold">Departure</span> - Mumbai to Jeddah</p>
+                                 </div>
+                                 <div class="d-flex flex-column flex-lg-row gap-2">
+                                    <div class="d-flex flex-row flex-lg-column justify-content-between justify-content-lg-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK2137</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-8 fs-md-5 fw-bold">05:20</span>
+                                          <p class="text-secondary fs-7 text-truncate">Aug 30, Mumbai</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">3h 15m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                          <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-8 fs-md-6 fw-bold">07:05</span>
+                                          <p class="text-secondary mt-1 fs-7 text-truncate">Aug 30, Dubai</p>
+                                          </div> 
+                                          <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                                 <div class="bg-light-secondary text-center p-1 my-5">8h 40m Layover in Dubai </div>
+                                 <div class="d-flex flex-column flex-lg-row gap-2">
+                                    <div class="d-flex flex-row flex-lg-column justify-content-between justify-content-lg-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK803</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-8 fs-md-5 fw-bold">15:45</span>
+                                          <p class="text-secondary fs-7 text-truncate">Aug 30, Dubai</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">3h 05m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                          <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-8 fs-md-6 fw-bold">17:50</span>
+                                          <p class="text-secondary mt-1 fs-7 text-truncate">Aug 30, Jeddah</p>
+                                          </div>
+                                          <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- end::departure flight -->
+                              <div class="separator my-5"></div>
+                              <!-- begin::arrival flight -->
+                              <div>
+                                 <p class="mb-5"><span class="fs-4 fw-bold">Arrival</span> - Jeddah to Mumbai</p>
+                                 <div class="d-flex flex-column flex-sm-row gap-2">
+                                    <div class="d-flex flex-row flex-sm-column align-items-center justify-content-between justify-content-sm-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK802</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                             <span class="text-dark fs-8 fs-md-5 fw-bold">04:10</span>
+                                             <p class="text-secondary fs-7 text-truncate">Sept 01, Jeddah</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                             <span class="fs-7 text-dark">2h 45m</span>
+                                             <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                                <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                             </div>
+                                             <div class="dots"></div>
+                                             <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                             <span class="text-dark fs-8 fs-md-6 fw-bold">07:55</span>
+                                             <p class="text-secondary mt-1 fs-7 text-truncate">Sept 01, Dubai</p>
+                                          </div>
+                                          <!-- end::check-out -->
+                                          </div>
+                                 </div>
+                                 <div class="bg-light-secondary text-center p-1 my-5">1h 33m Layover in Dubai </div>
+                                 <div class="d-flex flex-column flex-sm-row gap-2">
+                                    <div class="d-flex flex-row flex-sm-column align-items-center justify-content-between justify-content-sm-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK506</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-8 fs-md-5 fw-bold">09:30</span>
+                                          <p class="text-secondary fs-7 text-truncate">Sept 01, Dubai</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">3h 15m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                          <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-8 fs-md-6 fw-bold">14:15</span>
+                                          <p class="text-secondary mt-1 fs-7">Sept 01, Mumbai</p>
+                                          </div>
+                                          <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- end::arrival flight -->
+                        </div>
+                     </div>
+                     <div class="bg-white rounded-1 p-4 mt-5">
+                        <div class="row flex-column-reverse flex-md-row mx-0">
+                           <div class="col-12 col-md-8">
+                              <div class="row align-items-center mx-0">
+                                 <div class="col-12 col-md-2">
+                                    <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                 </div>
+                                 <div class="col-12 col-md-10">
+                                    <div class="row d-flex justify-content-between align-items-center flex-1 flight-check">
+                                       <!-- begin::check-in -->
+                                       <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-3 fw-bold">05:20</span>
+                                          <p class="text-secondary fs-7 text-wrap mb-0">Aug 30, Mumbai</p>
+                                       </div>
+                                       <!-- end::check-in -->
+                                       <!-- begin::flight-path -->
+                                       <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">2h 45m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                       </div>
+                                       <!-- end::flight-path -->
+                                       <!-- begin::check-out -->
+                                       <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-3 fw-bold">17:50</span>
+                                          <p class="text-secondary mb-0 fs-7 text-wrap">Aug 30, Jeddah</p>
+                                       </div>
+                                       <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row align-items-center mx-0 mt-7">
+                                 <div class="col-12 col-md-2">
+                                    <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                 </div>
+                                 <div class="col-12 col-md-10">
+                                    <div class="row d-flex justify-content-between align-items-center flex-1 flight-check">
+                                       <!-- begin::check-in -->
+                                       <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-3 fw-bold">04:10</span>
+                                          <p class="text-secondary fs-7 text-wrap mb-0">Sept 01, Jeddah</p>
+                                       </div>
+                                       <!-- end::check-in -->
+                                       <!-- begin::flight-path -->
+                                       <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">2h 45m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                       </div>
+                                       <!-- end::flight-path -->
+                                       <!-- begin::check-out -->
+                                       <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-3 fw-bold">14:15</span>
+                                          <p class="text-secondary mb-0 fs-7 text-wrap">Sept 01, Mumbai</p>
+                                       </div>
+                                       <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 col-md-4">
+                              <div class="d-flex justify-content-between flex-row-reverse flex-md-column mb-2 h-100">
+                                 <div class="btn btn-sm btn-light-primary fs-6 ms-auto">Select</div>
+                                 <div>
+                                    <div class="fs-2 text-primary d-flex fw-semibold justify-content-end">   
+                                       <span class="fw-medium sar-price">S</span>-2,945.03
+                                    </div>
+                                    <div class="text-end text-info cursor-pointer ms-auto d-none d-md-block" data-bs-toggle="collapse" href="#arrivalFlightTwo" role="button" aria-expanded="false" aria-controls="collapseExample">Flight Detail</div>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text-end text-info cursor-pointer ms-auto d-md-none mt-2" data-bs-toggle="collapse" href="#arrivalFlightTwo" role="button" aria-expanded="false" aria-controls="collapseExample">Flight Detail</div>
+                        <div class="collapse" id="arrivalFlightTwo">
+                           <div class="separator my-3"></div>
+                              <!-- begin::departure flight -->
+                              <div>
+                                 <div class="d-flex flex-column-reverse flex-md-row flex-stack align-items-start gap-3 mb-5">
+                                    <p><span class="fs-4 fw-bold">Departure</span> - Mumbai to Jeddah</p>
+                                 </div>
+                                 <div class="d-flex flex-column flex-lg-row gap-2">
+                                    <div class="d-flex flex-row flex-lg-column justify-content-between justify-content-lg-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK2137</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-8 fs-md-5 fw-bold">05:20</span>
+                                          <p class="text-secondary fs-7 text-truncate">Aug 30, Mumbai</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">3h 15m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                          <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-8 fs-md-6 fw-bold">07:05</span>
+                                          <p class="text-secondary mt-1 fs-7 text-truncate">Aug 30, Dubai</p>
+                                          </div> 
+                                          <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                                 <div class="bg-light-secondary text-center p-1 my-5">8h 40m Layover in Dubai </div>
+                                 <div class="d-flex flex-column flex-lg-row gap-2">
+                                    <div class="d-flex flex-row flex-lg-column justify-content-between justify-content-lg-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK803</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-8 fs-md-5 fw-bold">15:45</span>
+                                          <p class="text-secondary fs-7 text-truncate">Aug 30, Dubai</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">3h 05m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                          <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-8 fs-md-6 fw-bold">17:50</span>
+                                          <p class="text-secondary mt-1 fs-7 text-truncate">Aug 30, Jeddah</p>
+                                          </div>
+                                          <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- end::departure flight -->
+                              <div class="separator my-5"></div>
+                              <!-- begin::arrival flight -->
+                              <div>
+                                 <p class="mb-5"><span class="fs-4 fw-bold">Arrival</span> - Jeddah to Mumbai</p>
+                                 <div class="d-flex flex-column flex-sm-row gap-2">
+                                    <div class="d-flex flex-row flex-sm-column align-items-center justify-content-between justify-content-sm-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK802</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                             <span class="text-dark fs-8 fs-md-5 fw-bold">04:10</span>
+                                             <p class="text-secondary fs-7 text-truncate">Sept 01, Jeddah</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                             <span class="fs-7 text-dark">2h 45m</span>
+                                             <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                                <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                             </div>
+                                             <div class="dots"></div>
+                                             <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                             <span class="text-dark fs-8 fs-md-6 fw-bold">07:55</span>
+                                             <p class="text-secondary mt-1 fs-7 text-truncate">Sept 01, Dubai</p>
+                                          </div>
+                                          <!-- end::check-out -->
+                                          </div>
+                                 </div>
+                                 <div class="bg-light-secondary text-center p-1 my-5">1h 33m Layover in Dubai </div>
+                                 <div class="d-flex flex-column flex-sm-row gap-2">
+                                    <div class="d-flex flex-row flex-sm-column align-items-center justify-content-between justify-content-sm-start">
+                                          <img src="../assets/media/logo/emirates-flight-1.jpg" alt="Flight" class="w-full h-full object-cover">
+                                          <span class="fs-9 text-secondary mt-1">EK506</span>
+                                    </div>
+                                    <div class="row d-flex justify-content-between flex-1 flight-check">
+                                          <!-- begin::check-in -->
+                                          <div class="col-3 col-lg-4 check-in">
+                                          <span class="text-dark fs-8 fs-md-5 fw-bold">09:30</span>
+                                          <p class="text-secondary fs-7 text-truncate">Sept 01, Dubai</p>
+                                          </div>
+                                          <!-- end::check-in -->
+                                          <!-- begin::flight-path -->
+                                          <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center flight-path">
+                                          <span class="fs-7 text-dark">3h 15m</span>
+                                          <div class="separator separator-dashed separator-content border-gray-300 w-100 my-5">
+                                             <img src="../assets/media/icons/flight.jpg" alt="" width="19" height="19">
+                                          </div>
+                                          <div class="dots"></div>
+                                          <div class="fs-7 text-dark d-flex align-items-center"><span class="tz-icon-briefcase icon-14x d-inline-block me-1"></span> Cabin 1PC | <span class="tz-icon-luggage icon-14x d-inline-block mx-1" style="filter: brightness(0.5);"></span> Check-In 30KG</div>
+                                          </div>
+                                          <!-- end::flight-path -->
+                                          <!-- begin::check-out -->
+                                          <div class="col-3 col-lg-4 text-end check-out">
+                                          <span class="text-dark fs-8 fs-md-6 fw-bold">14:15</span>
+                                          <p class="text-secondary mt-1 fs-7">Sept 01, Mumbai</p>
+                                          </div>
+                                          <!-- end::check-out -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- end::arrival flight -->
+                        </div>
+                     </div>
+                     <div class="d-flex justify-content-center my-5">
+                        <div class="rounded-1 border border-1 border-primary p-3 cursor-pointer text-primary">Load More Flights <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/load-more.png" alt="load" width="14" height="14" class="ms-1"></div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- end::flight-options -->
+               </div>
+               <!-- end::row -->
+               <!-- begin::flight-filter -->
+               <div class="bg-light-secondary filter-modal" id="kt_drawer_flight_filter_view" data-kt-drawer="true"
+                  data-kt-drawer-activate="true"
+                  data-kt-drawer-toggle="#kt_drawer_flight_filter_button1"
+                  data-kt-drawer-close="#kt_drawer_flight_filter_close,#kt_drawer_flight_filter_close1"
+                  data-kt-drawer-direction="start"
+                  data-kt-drawer-overlay="true" data-kt-drawer-permanent="true"
+                  data-kt-drawer-width="{default:'100%', 'md': '60%', 'lg': '75%'}">
+                  <div class="card bg-light-secondary w-100">
+                     <!--begin::Card header-->
+                     <div class="card-header bg-white ps-md-12 pe-md-10 ps-8 pe-8 border-bottom rounded-0"
+                        id="kt_drawer_flight_filter_header">
+                        <!--begin::Title-->
+                        <div class="card-title my-0">
+                           <!--begin::User-->
+                           <h2 class="fs-lg-11 fw-medium">Apply Filters</h2>
+                           <!--end::User-->
+                        </div>
+                        <!--end::Title-->
+                        <!--begin::Card toolbar-->
+                        <div class="card-toolbar my-0">
+                           <!--begin::Close-->
+                           <div class="btn btn-sm btn-icon btn-active-light-primary"
+                              id="kt_drawer_flight_filter_close">
+                              <span class="filter-control"></span>
+                           </div>
+                           <!--end::Close-->
+                        </div>
+                        <!--end::Card toolbar-->
+                     </div>
+                     <!--end::Card header-->
+                     <!--begin::Card body-->
+                     <div class="card-body bg-white px-8 px-md-12" id="kt_drawer_flight_filter_body">
+                        <!--begin::Messages-->
+                        <div class="scroll-y me-n5 pe-5" data-kt-element="messages" data-kt-scroll="true"
+                           data-kt-scroll-activate="true" data-kt-scroll-height="auto"
+                           data-kt-scroll-dependencies="#kt_drawer_flight_filter_header, #kt_drawer_flight_filter_footer"
+                           data-kt-scroll-wrappers="#kt_drawer_flight_filter_body" data-kt-scroll-offset="0px">
+                           <div class="d-flex flex-column gap-7 bg-white rounded-2 h-100">
+                        <!-- begin::flight stops -->
+                        <div>
+                           <h5>Number Of Stops</h5>
+                           <div class="d-flex gap-2">
+                              <label class="p-3 border border-1 border-gray-300 rounded-1 cursor-pointer flex-1 text-center">
+                                 Direct
+                              </label>
+                              <label class="p-3 border border-1 border-gray-300 rounded-1 cursor-pointer flex-1 text-center">
+                                 1 Stop
+                              </label>
+                           </div>
+                        </div>
+                        <!-- end::flight stops -->
+                        <div class="separator"></div>
+                        <!-- begin::flight cabin -->
+                        <div>
+                           <h5>Cabin Class</h5>
+                           <div>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span>Economy</span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span>Business</span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack mb-3">
+                                 <span>First Class</span>
+                                 <input type="radio" name="class">
+                              </label>
+                              <label class="d-flex flex-stack">
+                                 <span>Premium Economy</span>
+                                 <input type="radio" name="class">
+                              </label>
+                           </div>
+                        </div>
+                        <!-- end::flight cabin -->
+                        <div class="separator"></div>
+                        <div>
+                           <h5>Departure Airports</h5>
+                           <label class="d-flex flex-stack mb-3">
+                              <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mumbai (Bombay), Chhatrapati Shivaji Maharaj International Airport">BOM <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                              <input type="radio" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Madinah, Prince Mohammad bin Abdulaziz International Airport">MED <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                              <input type="radio" name="class">
+                           </label>
+                        </div>
+                        <div>
+                           <h5>Arrival Airports</h5>
+                           <label class="d-flex flex-stack mb-3">
+                              <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mumbai (Bombay), Chhatrapati Shivaji Maharaj International Airport">BOM <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                              <input type="radio" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <span class="d-flex align-items-center gap-1 cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Madinah, Prince Mohammad bin Abdulaziz International Airport">MED <img src="../assets/media/icons/alert-blue.svg" alt="" width="10" height="10"></span>
+                              <input type="radio" name="class">
+                           </label>
+                        </div>
+                        <div class="separator"></div>
+                        <div>
+                           <h5>Airlines</h5>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/XY.png" alt="Flynas">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">Flynas</span>
+                              </div>
+                              <input type="radio" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/SV.png" alt="Saudia" width="15" height="15">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">Saudia</span>
+                              </div>
+                              <input type="radio" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/GF.png" alt="Gulf Air" width="15" height="15">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">Gulf Air</span>
+                              </div>
+                              <input type="radio" name="class">
+                           </label>
+                           <label class="d-flex flex-stack mb-3">
+                              <div class="d-flex align-items-center gap-1">
+                                 <img src="https://media.umrahme.com/prod/flighticons/MS.png" alt="EgyptAir" width="15" height="15">
+                                 <span class="d-flex align-items-center gap-1 cursor-pointer">EgyptAir</span>
+                              </div>
+                              <input type="radio" name="class">
+                           </label>
+                        </div>
+                     </div>
+                        </div>
+                        <!--end::Messages-->
+                     </div>
+                     <!--end::Card body-->
+                     <!--begin::Card footer-->
+                     <div class="card-footer bg-white shadow-sm d-flex gap-2 justify-content-between py-5 px-md-12 rounded-0"
+                        id="kt_drawer_flight_filter_footer">
+                        <button type="button"
+                           class="btn btn-outline fw-bold text-blue border-light-cyan btn-active-light-primary flex-1"
+                           id="kt_drawer_flight_filter_close1">
+                        Clear
+                        </button>
+                        <button type="button"
+                           class="btn text-white btn-primary flex-1">
+                        Apply
+                        </button>
+                     </div>
+                     <!--end::Card footer-->
+                  </div>
+               </div>
+               <!-- end::flight-filter -->
+            </div>
+            <!-- begin::detail-product -->
+            <div class="d-none fixed-bottom bg-white shadow py-5 px-6 final-price">
+               <!-- begin::price-btn -->
+               <div class="d-flex justify-content-between align-items-center price-btn">
+                  <div class="w-50">
+                     <p class="text-dark fs-2qx fw-bold mb-1">
+                        <span class="text-dark fs-6 fw-medium me-1">SAR</span>1,408.00
+                     </p>
+                     <span class="fs-8 text-secondary">Price available for 2 pax. <br> VAT, taxes included</span>
+                  </div>
+                  <a href="booking.html" class="btn bg-blue text-white fs-6 py-5 w-50">Book</a>
+               </div>
+               <!-- end::price-btn -->
+            </div>
+            <!-- begin::sort mobile -->
+            <div class="position-sticky d-none d-md-none justify-content-center mt-10 sort-filter-btn">
+               <button class="btn bg-dark-blue btn-active-blue text-white fs-5 mt-0 sort d-flex align-items-center gap-2"
+                  type="button" id="kt_drawer_flight_filter_button1">
+               <span class="d-md-none d-inline-block pe-1"> Sort &amp; </span> Filters
+               <span class="badge badge-circle badge-info fw-normal text-white fs-lg-6 ms-2 ms-md-4 w-30px h-30px"> 8 </span>
+               <span class="d-inline-block tz-icon-sort icon-24x"></span>
+               </button>
+            </div>
+            <!-- end::sort mobile -->
+         </div>
+         <!-- end::flight-main -->
+      </div>
+      <!-- begin::footer -->
+      <div class="bg-white listing-footer mt-19 d-none d-md-block" path="../common/footer.html">
+      </div>
+      <!-- end::footer -->
+      <!-- metronic js -->
+      <script src="../assets/js/global/script-bundle.min.js"></script>
+    <script src="../assets/js/package-detail-plugin.min.js"></script>
+      <!-- custom js -->
+      <script src="../assets/js/package.js"></script>
+   </body>
+
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="noindex,nofollow">
+      <title>Payment</title>
+      <!-- favicon -->
+      <link rel="icon" type="image/x-icon" href="../assets/media/logo/favicon.ico">
+      <!-- plugin css -->
+      <link rel="stylesheet" href="../assets/css/tasheer-style-bundle.min.css">
+      <!-- custom css -->
+      <link rel="stylesheet" href="../assets/css/tasheer-utility.css">
+      <!-- <link rel="stylesheet" href="../assets/css/package-style.min.css"> -->
+      <link rel="stylesheet" href="../assets/css/tasheer-package.css">
+   </head>
+   <body>
+      <div class="app-content container-xl px-2 px-md-9 px-lg-10 px-xxl-0">
+         <div class="payment">
+            <div class="booking-main">
+                <!-- begin::back to detail -->
+                <div class="d-flex align-items-center gap-1 mb-4">
+                    <span class="tz-icon-arrow-left icon-18x d-inline-block"></span>
+                    <a href="../package/detail-80.html" class="text-blue fs-7 fw-medium">Back to Detail page</a>
+                </div>
+                <!-- end::back to detail -->
+                <h2 class="fs-3 fs-md-1 mb-8">Payment Details</h2>
+               <div class="row">
+                    <div class="col-12 col-lg-8 order-2 order-lg-1">
+                        <div id="digitalTimer" class="d-flex justify-content-center mb-7 hidden">
+                            <div class="card flex-row align-items-center justify-content-center gap-4 p-4 border border-1 border-bottom-2 border-primary bg-light-primary time-out-anim w-100" id="digitalClock">
+                                <div class="clock-icon"><img src="../assets/media/bg/timer-clock.gif" width="70"></div>
+                                <div class="digital-time">
+                                    <div class="digital-time-label">Time Remaining</div>
+                                    <div class="fs-2x fw-bold ls-1 lh-1 mb-1" id="digitalTime">04:35</div>
+                                    <span class="fs-6 text-dark-primary">Pay now! before time is running out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card px-5 py-8">
+                            <div class="card d-flex flex-xl-row justify-content-between align-items-xl-center gap-xl-4 p-4 border border-info border-left-2 mb-5">
+                                <div>
+                                    <h2 class="text-primary mb-0">Technical Difficulties</h2>
+                                    <p class="text-primary">We're experiencing technical difficulties. Please try again in a few moments.</p>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row gap-2">
+                                    <button class="btn btn-primary text-nowrap w-100 w-md-auto">Retry Payment</button>
+                                </div>
+                            </div>
+                            <!-- begin::normal content -->
+                            <!-- begin::what next retry payment -->
+                            <div class="card p-3 mb-10 gap-3 border border-1">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="fw-bold text-danger">1</div>
+                                    <p class="mb-0">Click Retry Payment to attempt again.</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="fw-bold text-danger">2</div>
+                                    <p class="mb-0">Do not close or refresh the page during processing.</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="fw-bold text-danger">3</div>
+                                    <p class="mb-0">If your wallet was debited but booking not confirmed, the amount will be auto-refunded within a few minutes.</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="fw-bold text-danger">4</div>
+                                    <p class="mb-0">Still facing issues? Contact our support team with your Transaction ID for quick help.</p>
+                                </div>
+                            </div>
+                            <!-- begin::what next retry payment -->
+                            <div>
+                                <!-- begin::wallet balance -->
+                                <div class="card p-4 border border-1 border-secondary">
+                                    <h2>Wallet Balance</h2>
+                                    <div class="d-flex flex-column gap-4 mt-5">
+                                    <div class="d-flex flex-stack">
+                                        <div class="text-secondary">Total Wallet Balance</div>
+                                        <h2 class="mb-0"><spam class="sar-price">s</spam>33594.82</h2>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="d-flex flex-stack">
+                                        <div class="text-secondary">Booking Amount</div>
+                                        <div class="mb-0 "><spam class="sar-price">s</spam>12.75</div>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="d-flex flex-stack">
+                                        <div class="text-secondary fw-bold">Balance After Payment</div>
+                                        <h3 class="mb-0 text-primary fw-normal"><spam class="sar-price">s</spam>33582.07</h3>
+                                    </div>
+                                    </div>
+                                    <div class="row mt-5 d-none">
+                                        <div class="col">
+                                        <div class="card p-4 text-center border border-1 border-secondary">
+                                            <h6 class="text-dark-gray">Total Wallet Balance</h6>
+                                            <h5 class="mb-0 justify-content-center"><spam class="sar-price">s</spam>33594.82</h5>
+                                        </div>
+                                        </div>
+                                        <div class="col">
+                                        <div class="card p-4 text-center border border-1 border-secondary">
+                                            <h6 class="text-dark-gray">Booking Amount</h6>
+                                            <h5 class="mb-0 justify-content-center"><spam class="sar-price">s</spam>3458.49</h5>
+                                        </div>
+                                        </div>
+                                        <div class="col">
+                                        <div class="card p-4 text-center border border-1 border-secondary">
+                                            <h6 class="text-dark-gray">Balance After Payment</h6>
+                                            <h5 class="mb-0 justify-content-center text-primary"><spam class="sar-price">s</spam>30136.33</h5>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end::wallet balance -->
+                                <!-- begin::payment method -->
+                                <div class="mt-10">
+                                    <h2>Payment Method</h2>
+                                    <div class="card rounded-1 py-5 px-4 px-md-6 mt-5 bg-light-primary border border-1 border-secondary">
+                                        <!-- begin::booking-payment-info -->
+                                        <div class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center">
+                                            <!-- begin::payment-option -->
+                                            <div class="d-flex align-items-center">
+                                                <span class="bg-white rounded-circle p-3 me-3"><div class="tz-icon-wallet icon-18x"></div></span>
+                                                <div class="d-flex flex-column">
+                                                    <h3 class="fw-bold text-dark mb-0">Wallet Payment</h3>
+                                                    <div class=" text-secondary">Available Balance: <span class="sar-price ms-1">s</span> 7,90,389.71</div>
+                                                </div>
+                                            </div>
+                                            <!-- end::payment-option -->
+                                            <!-- begin::payment-price -->
+                                            <input class="form-check-input border border-1 border-gray-400" type="radio" value="" id="flexradioDefault" checked>
+                                            <!-- end::payment-price -->
+                                        </div>
+                                        <!-- end::booking-payment-info -->
+                                    </div>
+                                </div>
+                                <!-- end::payment method -->
+                                <!-- begin::what next normal payment -->
+                             <h2 class="mt-5">What Next</h2>
+                            <div class="row row-cols-1 row-cols-md-3 row-gap-2 mb-10">
+                                <div class="col">
+                                    <div class="card flex-row align-items-start p-3 border border-1 gap-2 lh-base fs-5 h-100">
+                                        <div class="badge badge-danger badge-circle mt-1 p-2 px-3">1</div>
+                                        The payment will be processed from your wallet balance.
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card flex-row align-items-start p-3 border border-1 gap-2 lh-base fs-5 h-100">
+                                        <div class="badge badge-danger badge-circle mt-1 p-2 px-3">2</div>
+                                        You’ll receive a confirmation email and booking voucher.
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card flex-row align-items-start p-3 border border-1 gap-2 lh-base fs-5 h-100">
+                                        <div class="badge badge-danger badge-circle mt-1 p-2 px-3">3</div>
+                                        You can view your package details anytime under My Bookings.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::what next normal payment -->
+                                <!-- begin::top-up wallet -->
+                                <div class="card d-flex flex-xl-row justify-content-between align-items-xl-center gap-xl-4 p-4 border border-danger border-left-2 mt-10">
+                                    <div>
+                                        <h2 class="text-danger mb-0">Insufficient Wallet Balance</h2>
+                                        <p class="text-danger">You need ₹ 47.12 more to complete this booking. Please top-up your wallet first.</p>
+                                    </div>
+                                    <div class="d-flex flex-column flex-sm-row gap-2">
+                                        <button class="btn btn-primary text-nowrap w-100 w-md-auto">Top-up Wallet</button>
+                                        <button class="btn btn-outline btn-outline-secondary text-nowrap w-100 w-md-auto">Retry Payment</button>
+                                    </div>
+                                </div>
+                                <!-- end::top-up wallet -->
+                                <!-- begin::what next top-up wallet -->
+                                <div class="card p-3 mb-10 gap-3 border border-1 mt-5">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="fw-bold text-danger">1</div>
+                                        <p class="mb-0">Add the required amount to your wallet by clicking Top-up Wallet.</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="fw-bold text-danger">2</div>
+                                        <p class="mb-0">After topping up, click Retry Payment to finish your booking.</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="fw-bold text-danger">3</div>
+                                        <p class="mb-0">Your booking details will appear once the payment succeeds.</p>
+                                    </div>
+                                </div>
+                                <!-- end::what next top-up wallet -->
+                                <!-- begin::transaction summary hide-->
+                                <div class="mt-10 card p-4 border border-1 border-secondary d-none">
+                                    <h2>Transaction Summary</h2>
+                                    <div class="d-flex flex-column gap-4 mt-5">
+                                    <div class="d-flex flex-stack">
+                                        <div class="text-secondary">Subtotal</div>
+                                        <div><spam class="sar-price">s</spam>5.57</div>
+                                    </div>
+                                    <div class="d-flex flex-stack">
+                                        <div class="text-secondary">Taxes & Fees</div>
+                                        <div><spam class="sar-price">s</spam>1.12</div>
+                                    </div>
+                                    <div class="d-flex flex-stack">
+                                        <div class="text-secondary fw-bold">Service Fee</div>
+                                        <h3 class="mb-0 text-primary fw-normal"><spam class="sar-price">s</spam>6.06</h3>
+                                    </div>
+                                        <div class="separator"></div>
+                                    <div class="d-flex flex-stack">
+                                        <h3 class="text-dark">Total Amount</h3>
+                                        <h3 class="mb-0 text-dark"><spam class="sar-price">s</spam>12.75</h3>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- end::transaction summary -->
+                                <!-- begin::terms & condition -->
+                                <div class="mt-10">
+                                    <h2>Terms & Conditions</h2>
+                                    <div class="form-check mt-5">
+                                        <input class="form-check-input border border-1 border-gray-400 h-20px w-20px" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label fs-7 text-secondary d-flex align-items-center" for="flexCheckDefault" style="display: block !important;">
+                                            I agree to the terms and conditions and cancellation policy. I authorize the deduction of <span class="sar-price ms-1">s</span> 147.12 from my wallet balance.
+                                        </label> 
+                                    </div>
+                                </div>
+                                <!-- end::terms & condition -->
+                            </div>
+                            <!-- end::normal content -->
+                        </div>
+                        <div class="d-flex d-flex justify-content-end align-items-center flex-1 mt-5">
+                            <a href="../package/traveler-info.html" class="btn btn-primary w-200px">Pay Now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 price-section-detail order-1 order-lg-2 mb-md-8 mb-lg-0">
+                        <div class="card bg-white detail-price price-card">
+                        <!-- begin::card-header -->
+                        <div class="card-header d-none d-lg-block border-0 px-0 min-h-1px">
+                            <div class="d-flex justify-content-end align-items-end flex-column" data-bs-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
+                                <div class="d-flex align-items-end gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold lh-1">
+                                <span class="fw-normal sar-price">S</span><span>12.57</span>
+                                </div>
+                                <div class="fs-8 text-secondary fw-normal text-decoration-underline cursor-pointer">Inclusive of all taxes</div>
+                            </div>
+                            <div class="d-flex justify-content-end mt-1"><div class="fs-7 border border-1 border-secondary text-secondary rounded-1 p-2 text-end">Ticket ID: 1761577917622 <span class="tz-icon-copy icon-14x d-inline-block cursor-pointer"></span></div></div>
+                            <div class="collapse mt-5" id="collapsePrice">
+                                <div class="card card-body gap-3 p-5 border border-1 border-secondary">
+                                <div class="d-flex flex-stack">
+                                    <span class="fs-6 text-dark">Base Price</span>
+                                    <div class="d-flex justify-content-end align-items-end gap-1 fs-6">
+                                        <span class="fw-normal fs-8 mb-1 sar-price">S</span><span class="fs-3 fw-medium">5.57</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-stack">
+                                    <span class="fs-6 text-dark">Taxes</span>
+                                    <div class="d-flex justify-content-end align-items-end gap-1 fs-6">
+                                        <span class="fw-normal fs-8 mb-1 sar-price">S</span><span class="fs-3 fw-medium">1.12</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-stack">
+                                    <span class="fs-6 text-dark">Service Fee</span>
+                                    <div class="d-flex justify-content-end align-items-end gap-1 fs-6">
+                                        <span class="fw-normal fs-8 mb-1 sar-price">S</span><span class="fs-3 fw-medium text-primary">6.06</span>
+                                    </div>
+                                </div>
+                                <div class="separator"></div>
+                                <div class="d-flex flex-stack fw-bold">
+                                    <span class="fs-6 text-dark">Total Price</span>
+                                    <div class="d-flex justify-content-end align-items-end gap-1 fs-6">
+                                        <span class="fs-8 mb-1">SAR</span><span class="fs-3">12.57</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- begin::card-header end -->
+                        <!-- begin::card-body -->
+                        <div class="card-body d-lg-block py-4 px-0 collapse" id="detailPackage">
+                            <!-- begin::package include -->
+                            <div class="mb-3">
+                                <div class="separator mb-2 d-none d-lg-block"></div>
+                                <p class="text-center fs-7 fw-bold">Package Includes</p>
+                                <div class="d-flex flex-wrap gap-7 fs-8">
+                                <div class="d-flex flex-column align-items-center gap-1">
+                                    <img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/car.png" alt="car" width="22">
+                                    <span>Transfer</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center gap-1">
+                                    <img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/hotel-blue.svg" alt="hotel" width="22">
+                                    <span>Hotel</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center gap-1">
+                                    <img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/visa-blue.svg" alt="visa" width="22">
+                                    <span>Visa</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center gap-1">
+                                    <img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/activity.png" alt="activity" width="22">
+                                    <span>Activity</span>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- end::package include -->
+                            <!-- begin::plane-info -->
+                            <div class="d-flex flex-column gap-4 plane-info">
+                                <div class="separator"></div>
+                                <!-- begin::plane-itenary -->
+                                <div class="d-flex gap-5 align-items-start">
+                                <div>
+                                    <span class="tz-icon-departure-gray icon-20x d-inline-block"></span>
+                                </div>
+                                <div class="service-title d-flex gap-1 flex-column">
+                                    <span class="fs-8  fw-normal text-secondary">Departure from</span>
+                                    <span class="fs-7 fw-medium text-dark">London Heathrow (LHR)</span>
+                                </div>
+                                </div>
+                                <!-- end::plane-itenary -->
+
+                                <!-- begin::cabin-itenary -->
+                                <div class="d-flex  gap-5 align-items-start">
+                                <div>
+                                    <span class="tz-icon-cabin-gray icon-20x d-inline-block"></span>
+                                </div>
+                                <div class="service-title d-flex gap-1 flex-column">
+                                    <span class="fs-8 fw-normal text-secondary ">Cabin Class</span>
+                                    <span class="fs-7 fw-medium text-dark">Premium Economy</span>
+                                </div>
+                                </div>
+                                <!-- end::cabin-itenary -->
+
+                                <!-- begin::check-in -->
+                                <div class="d-flex gap-5 align-items-start">
+                                <div>
+                                    <span class="tz-icon-calendar-gray icon-20x d-inline-block"></span>
+                                </div>
+                                <div class="service-title d-flex gap-1 flex-column">
+                                    <span class="fs-8 fw-normal text-secondary">Check-in</span>
+                                    <span class="fs-7 fw-medium text-dark">Sep 15, 2023</span>
+                                </div>
+                                </div>
+                                <!-- end::check-in-end -->
+
+                                <!-- begin::check-out -->
+                                <div class="d-flex  gap-5 align-items-start">
+                                <div>
+                                    <span class="tz-icon-calendar-gray icon-20x d-inline-block"></span>
+                                </div>
+                                <div class="service-title d-flex gap-1 flex-column">
+                                    <span class="fs-8 fw-normal text-secondary">Check-out</span>
+                                    <span class="fs-7 fw-medium text-dark">Sep 22, 2023</span>
+                                </div>
+                                </div>
+                                <!-- end::check-out-end -->
+
+                                <!-- begin::guest-itenary -->
+                                <div class="d-flex gap-5 align-items-start">
+                                <div>
+                                    <span class="tz-icon-guest-gray icon-20x d-inline-block"></span>
+                                </div>
+                                
+                                <div class="service-title d-flex gap-1 flex-column">
+                                    <span class="fs-8 fw-normal text-secondary">Guests</span>
+                                    <span class="fs-7 fw-medium text-dark">2 Adults, 2 Children</span>
+                                </div>
+                                </div>
+                                <!-- end::guest-itenary -->
+                            </div>
+                            <!-- end::plane-info -->
+                        </div>
+                        <!-- end::card-body -->
+                        <div class="card-footer p-0 pt-lg-4 border-0 d-flex gap-3 flex-stack">
+                    
+                     <div class="d-flex justify-content-between align-items-center gap-2 flex-1">
+                        <a href="../package/traveler-info.html" class="btn btn-primary flex-1">
+                           Pay Now
+                        </a>
+                        <div class="d-flex d-lg-none justify-content-end align-items-end flex-column flex-1" data-bs-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
+                           <div class="d-flex align-items-end gap-1 fs-2x fw-bold">
+                              <span class="fw-normal sar-price">S</span><span>12.57</span>
+                           </div>
+                           <div class="fs-9 text-secondary fw-normal">Inclusive of all taxes</div>
+                        </div>
+                        <div class="text-end d-lg-none align-items-center p-4 collapsed" data-bs-toggle="collapse" data-bs-target="#detailPackage" aria-expanded="false" aria-controls="detailPackage">
+                           <i class="tz-icon-lift icon-14x d-inline-block"></i>
+                        </div>
+                     </div>
+                  </div>
+                        <!-- end::card-header -->
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- metronic js -->
+      <script src="../assets/js/global/script-bundle.min.js"></script>
+      <!-- custom js -->
+      <script src="../assets/js/payment.js"></script>
+   </body>
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="noindex,nofollow">
+      <meta name="robots" content="noindex,nofollow">
+      <title>Listing Page</title>
+      <!-- favicon -->
+      <link async defer rel="shortcut icon" type="image/x-icon"
+         href="https://media.umrahme.com/qa/saas/assets/media/logo/favicon.ico">
+
+      <link rel="stylesheet" href="../assets/css/tasheer-style-bundle.min.css">
+      <!--custom css-->
+      <link rel="stylesheet" href="../assets/css/tasheer-utility.css">
+      <link rel="stylesheet" href="../assets/css/tasheer-package.css">
+
+      <style>
+         .form-select{
+            padding:0.2rem 3rem 0.2rem 1rem;
+            border:1px solid #f1f1f1;
+         }
+         .select2-container .select2-selection--single .select2-selection__rendered{
+            padding-left: 2px;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- begin::header -->
+      <!-- <header class="fixed-top header" path="../common/header.html">
+      </header> -->
+      <!-- end::header-->
+      <!-- <div class="loading-overlay">
+         <div class="spinner-stroked" role="status">
+            <span class="sr-only"></span>
+         </div>
+      </div> -->
+      <!-- search panel start -->
+      <div class="d-flex justify-content-center container-xl px-6 px-lg-10 mt-20 position-relative">
+         <div class="listing-sort d-none d-md-flex mt-13">
+            <div class="h3 fw-medium mb-0">7 Umrah Packages for you</div>
+            <div class="d-flex">
+               <span class="sort-title">Sorted By: </span>
+               <div class="dropdown select-nights ">
+                  <!-- begin::select-field -->
+                  <div class="dropdown-toggle "role="button" id="priceshorting" data-bs-toggle="dropdown"  aria-expanded="false" data-bs-auto-close="inside" data-bs-offset="6,0">
+                     <span class="sort-price-title">Price (High to low)
+                     <img src="../assets/media/icons/sorting-drop-icon.png" class="mb-1"></img>
+                     </span>
+                  </div>
+                  <!-- end::select-field -->
+                  <ul class="z-index-2 dropdown-menu dropdown-menu-end nights-dropdown w-250px scrollable-menu options p-5 bg-white rounded-16 shadow-sm">
+                     <form action="">
+                        <div class="d-flex justify-content-end">
+                           <span class="tz-icon-modal-close icon-22x d-block d-md-none border-0 btn-nightdropdown-mobile-popup-close mb-10" data-target="#priceshorting"></span>
+                        </div>
+                        <div class="package-months">
+                           <label class="dropdown-item d-flex justify-content-between align-items-centers px-0">
+                              <div class="package-name">Best</div>
+                              <input class="border-light-cyan" type="radio" name="best" value="best">
+                           </label>
+                           <label class="dropdown-item d-flex justify-content-between align-items-centers px-0">
+                              <div class="package-name selected">Price (High to low)</div>
+                              <input class="border-light-cyan" type="radio" checked name="best" value="Pricehigh">
+                           </label>
+                           <label class="dropdown-item d-flex justify-content-between align-items-centers px-0">
+                              <div class="package-name">Price (Low to High)</div>
+                              <input class="border-light-cyan" type="radio" name="best" value="Pricelow">
+                           </label>
+                        </div>
+                     </form>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- search panel end -->
+      <div class="app-content container-xl px-6 px-lg-10">
+         <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 col-xl-3 filter-left">
+               <div class="d-flex align-items-center gap-1 py-5 pt-md-0 d-lg-none">
+                  <button class="d-block d-lg-none rounded-8 border border-1 border-secondary px-5 py-3 bg-white position-relative me-5" id="kt_drawer_listing_filter_button">
+                  <img src="../assets/media/icons/list-filter-icon.png"  width="26px" alt="filter-icon" class="" /> <span class="position-absolute top-0 start-100 translate-middle badge badge-circle badge-info">1</span>
+                  </button>
+                  <div class="text-nowrap overflow-scroll hide-scrollbar">
+                     <button type="button" class="rounded-12 fs-5 border border-1 border-secondary p-5 bg-white" data-bs-toggle="modal" data-bs-target="#package-month-modal">
+                     Packages for Month 
+                     <img src="../assets/media/icons/sorting-drop-icon.png" class="mb-1">
+                     </button>
+                     <button type="button" class="rounded-12 fs-5 border border-1 border-secondary p-5 bg-white" data-bs-toggle="modal" data-bs-target="#flight-modal">
+                     Flights 
+                     <img src="../assets/media/icons/sorting-drop-icon.png" class="mb-1">
+                     </button>
+                     <button type="button" class="rounded-12 fs-5 border border-1 border-secondary p-5 bg-white" data-bs-toggle="modal" data-bs-target="#hotel-category-modal">
+                     Hotel Category 
+                     <img src="../assets/media/icons/sorting-drop-icon.png" class="mb-1">
+                     </button>
+                     <button type="button" class="rounded-12 fs-5 border border-1 border-secondary p-5 bg-white" data-bs-toggle="modal" data-bs-target="#city-modal">
+                     Select city 
+                     <img src="../assets/media/icons/sorting-drop-icon.png" class="mb-1">
+                     </button>
+                     <button type="button" class="rounded-12 fs-5 border border-1 border-secondary p-5 bg-white" data-bs-toggle="modal" data-bs-target="#package-night-modal">
+                     Total package nights 
+                     <img src="../assets/media/icons/sorting-drop-icon.png" class="mb-1">
+                     </button>
+                  </div>
+               </div>
+               <div class="d-md-none pb-5">
+                  <span class="fs-4 fw-medium">7 Umrah Packages for you</span>
+               </div>
+               <div class="d-none d-lg-block">
+                  <div class="filter-card">
+                     <div class="package-months">
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#packagemonth" aria-expanded="true" aria-controls="packagemonth">
+                                 Packages for Month
+                                 </button>
+                              </h2>
+                              <div id="packagemonth" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body" path="../common-filter/package-filter/package-month.html">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="filter-card">
+                     <div class="hotel-category">
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#flight" aria-expanded="true" aria-controls="flight">
+                                 Flight
+                                 </button>
+                              </h2>
+                              <div id="flight" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body" path="../common-filter/package-filter/flight.html">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="filter-card">
+                     <div class="hotel-category">
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#city" aria-expanded="true" aria-controls="city">
+                                 Hotel Category
+                                 </button>
+                              </h2>
+                              <div id="city" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body" path="../common-filter/package-filter/hotel-category.html">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="filter-card">
+                     <div class="package-months">
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#city" aria-expanded="true" aria-controls="city">
+                                 Select City
+                                 </button>
+                              </h2>
+                              <div id="city" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body" path="../common-filter/package-filter/select-city.html">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="filter-card">
+                     <div class="package-months">
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                 <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#packagenight" aria-expanded="true" aria-controls="packagenight">
+                                 Total Package Nights
+                                 </button>
+                              </h2>
+                              <div id="packagenight" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body" path="../common-filter/package-filter/package-night.html">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-8 col-xl-9">
+               <div class="d-flex justify-content-center flex-column listing-main">
+                  <!-- begin::filter control -->
+                  <div class="selected-filter d-none d-lg-flex">
+                     <span>AED 2,000 to AED 75,000 <i class="tz-icon-close-blue icon-16x cursor-pointer"></i></span>
+                     <span>Dhuʻl-Hijjah <i class="tz-icon-close-blue icon-16x cursor-pointer"></i></span>
+                     <span>4 Nights and above <i class="tz-icon-close-blue icon-16x cursor-pointer"></i></span>
+                     <span>With Flights <i class="tz-icon-close-blue icon-16x cursor-pointer"></i></span>
+                     <span>4★ <i class="tz-icon-close-blue icon-16x cursor-pointer"></i></span>
+                     <a href="javacript:;" class="fs-4 ls-one text-purple fw-medium ps-4 text-nowrap"> Clear All</a>
+                  </div>
+                  <!-- end::filter control -->
+              
+                  <!-- <button class="btn btn-sm btn-info ms-auto mb-3 rounded-3 " data-bs-toggle="modal" data-bs-target="#AgentModal"><img src="../assets/media/icons/support-white.png" alt="support" width="24" height="24"> Connect Our Agent</button> -->
+                  <!-- begin::package-content -->
+                  <div class="tns package-content" style="direction: ltr">
+                     <div class="d-flex flex-column gap-7">
+                        <!-- card one -->
+                        <div class="card rounded-20 pb-lg-0 flex-xl-row w-100" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
+                           <!-- begin::card-header -->
+                           <div class="card-header w-100 w-xl-250px border-0 px-0 py-0">
+                              <!-- begin::carousel -->
+                              <div id="listOne" class="carousel slide w-100 h-xl-300px" data-bs-ride="carousel">
+                                 <!-- begin::carousel-inner -->
+                                 <div class="carousel-inner h-100">
+                                    <div class="carousel-item w-100 h-xl-300px active" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_1.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="carousel-item rounded-start-1 w-100 h-xl-300px" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="carousel-item rounded-start-1 w-100 h-xl-300px" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                 </div>
+                                 <!-- end::carousel-inner -->
+                                 <!-- begin::control-prev -->
+                                 <button class="carousel-control-prev" type="button" data-bs-target="#listOne" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../assets/media/icons/slide-bg-arrow.png" width="30" alt="arrow" class="rounded-20"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                 <!-- end::control-prev -->
+                                 <!-- begin::control-next -->
+                                 <button class="carousel-control-next" type="button" data-bs-target="#listOne" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"><img src="../assets/media/icons/slide-bg-arrow.png" width="30" alt="arrow" class="rounded-20 rotate-180deg"></span>
+                                    <span class="visually-hidden">Next</span>
+                                 </button>
+                                 <!-- end::control-next -->
+                              </div>
+                              <!-- end::carousel -->
+                           </div>
+                           <!-- end::card-header -->
+                           <!-- begin::card-body -->
+                           <div class="card-body d-flex flex-column pb-0 p-5 listing-content">
+                              <div>
+                                 <a href="#" class="package-title">Mecca Madina through Jedda and Riyadh</a>
+                                 <div class="package-badges">
+                                    <div>
+                                       <span class="badge bg-light-green text-green popular-tag"><span class="tz-icon-leaf icon-16x me-2"></span>Sustainable Trip</span>
+                                    </div>
+                                    <div>
+                                       <span class="badge bg-light-watermelon text-watermelon popular-tag"><span class="tz-icon-red-flag icon-13x me-2"></span> Value for Money</span>
+                                    </div>
+                                 </div>
+                                 <div class="breadcrumb package-cities">
+                                    <li>Makkah 2N</li>
+                                 </div>
+                              </div>
+                              <!-- begin::package-itenary -->
+                              <div class="div d-flex justify-content-end flex-column gap-2 gap-lg-3 px-0 package-itenary">
+                                 <!-- begin::flight-itenary -->
+                                 <div class="text-secondary fs-7 d-md-flex d-none flex-wrap gap-3 align-items-center">
+                                    <div><span class="tz-icon-flight d-inline-block icon-18x"></span></div>
+                                    <span>London - Jeddah</span>
+                                    <div><span class="tz-icon-flight-return d-inline-block icon-18x"></span></div>
+                                    <span>Riyadh - London</span>
+                                 </div>
+                                 <!-- end::flight-itenary -->
+                                 <!-- begin::hotel-itenary -->
+                                 <div class="d-flex gap-3 align-items-center">
+                                    <!-- begin::service-icon -->
+                                    <div><span class="tz-icon-hotel-blue d-inline-block icon-20x"></span></div>
+                                    <!-- end::service-icon -->
+                                    <div class="badge badge-light-warning fs-6 lh-0 d-flex align-items-center gap-1"><span>5</span> <i class="tz-icon-star-fill icon-16x"></i></div>
+                                    <!-- begin::service-title -->
+                                    <div>
+                                       <span class="text-secondary service-title">
+                                       Blue Coral Hotel (Makkah)
+                                       </span>
+                                       <span class="fs-4 text-gray-300 px-1">•</span>
+                                       <span class="text-secondary service-title ">1.3km from Holy Kaaba</span>
+                                    </div>
+                                    <!-- end::service-title -->
+                                 </div>
+                                 <!-- end::hotel-itenary -->
+                                 <a href="detail-static.html" class="text-primary fw-medium fs-7 service-title" target="">View more</a>
+                              </div>
+                              <!-- end::package-itenary -->
+                           </div>
+                           <!-- end::card-body -->
+                           <hr class="mb-0">
+                           <!-- begin::package-price -->
+                           <div class="card-footer p-5 border-0 package-price w-auto">
+                              <!-- begin::rates -->
+                              <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gap-3 gap-xl-0">
+                                 <div class="d-flex flex-row flex-md-column justify-content-evenly gap-2">
+                                    <div class="w-100">
+                                       <div class="dropdown w-100 w-md-275px w-xl-100">
+                                          <!-- begin::select-field -->
+                                          <div class="dropdown-toggle d-flex flex-stack rounded-1 py-3 px-5 border border-1 border-light-cyan" role="button" id="nightdropdownmenu" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true" data-bs-offset="0,9">
+                                             <span class="fs-6 fs-md-5 fw-medium pe-2">2 Nights</span>
+                                             <span class="tz-icon-arrow-down icon-16x d-inline-block"></span>
+                                          </div>
+                                          <!-- end::select-field -->
+                                          <ul class="dropdown-menu dropdown-menu-end nights-dropdown w-275px py-3 px-5 bg-white rounded-1 border border-1 border-light-cyan shadow-sm">
+                                             <div class="d-flex justify-content-end">
+                                                <!-- <span class="tz-icon-modal-close icon-22x d-block d-md-none border-0  mb-10" data-target="#nightdropdownmenu"></span> -->
+                                             </div>
+                                             <div class="package-months">
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name selected">2 Nights <span class="package-month">Makkah 2N</span></div>
+                                                   <input class="border-light-cyan" type="radio" checked="" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">3 Nights <span class="package-month">Makkah 3N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">4 Nights <span class="package-month">Makkah 4N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">5 Nights <span class="package-month">Makkah 5N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">6 Nights <span class="package-month">Makkah 6N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">7 Nights <span class="package-month">Makkah 7N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers">
+                                                   <div class="package-name">8 Nights <span class="package-month">Makkah 8N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                             </div>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="w-100">
+                                       <select class="form-select" data-hide-search="true" data-control="select2" data-placeholder="Select an option">
+                                          <option value="1">5 Star Hotel</option>
+                                          <option value="2">4 Star Hotel</option>
+                                          <option value="3">3 Star Hotel</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <!-- begin::price -->
+                                 <div class="price d-flex flex-column align-items-end mt-xl-3">
+                                    <div class="text-dark fs-2tx fs-lg-1 fw-medium d-flex align-items-end justify-content-end gap-1">
+                                       <span class="fs-6 mb-1">SAR</span>
+                                       <span>1,408.00</span>
+                                    </div>
+                                    <span class="text-secondary fs-8">Starting from price</span>
+                                    <span class="text-secondary fs-9">Per person on twin sharing</span>
+                                    <!-- begin::view detail btn desktop -->
+                                    <a href="detail-static.html"
+                                       class="btn btn-primary text-white rounded-12 fs-5 py-2 mt-3 w-100 w-md-200px">
+                                    Customize
+                                    </a>
+                                    <!-- end::view detail btn desktop -->
+                                 </div>
+                                 <!-- end::price -->
+                              </div>
+                              <!-- end::rates -->
+                           </div>
+                           <!-- end::package-price -->
+                        </div>
+                        <!-- card one end -->
+                        <!-- card two start -->
+                        <div class="card rounded-20 pb-lg-0 flex-xl-row w-100" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
+                           <!-- begin::card-header -->
+                           <div class="card-header w-100 w-xl-250px border-0 px-0 py-0">
+                              <!-- begin::carousel -->
+                              <div id="listtwo" class="carousel slide w-100 h-xl-300px" data-bs-ride="carousel">
+                                 <!-- begin::carousel-inner -->
+                                 <div class="carousel-inner">
+                                    <div class="carousel-item w-100 h-xl-300px active" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_2.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="carousel-item rounded-start-1 w-100 h-xl-300px" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="carousel-item rounded-start-1 w-100 h-xl-300px" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                 </div>
+                                 <!-- end::carousel-inner -->
+                                  <!-- begin::control-prev -->
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#listtwo" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../assets/media/icons/slide-bg-arrow.png" width="30" alt="arrow" class="rounded-20"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                 <!-- end::control-prev -->
+                                 <!-- begin::control-next -->
+                                 <button class="carousel-control-next" type="button" data-bs-target="#listtwo" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"><img src="../assets/media/icons/slide-bg-arrow.png" width="30" alt="arrow" class="rounded-20 rotate-180deg"></span>
+                                    <span class="visually-hidden">Next</span>
+                                 </button>
+                                 <!-- end::control-next -->
+                              </div>
+                              <!-- end::carousel -->
+                           </div>
+                           <!-- end::card-header -->
+                           <!-- begin::card-body -->
+                           <div class="card-body d-flex flex-column pb-0 p-5 listing-content">
+                              <div>
+                                 <a href="#" class="package-title">Mecca Madina through Jedda and Riyadh</a>
+                                 <div class="package-badges">
+                                    <div>
+                                       <span class="badge bg-light-green text-green popular-tag"><span class="tz-icon-leaf icon-16x me-2"></span>Sustainable Trip</span>
+                                    </div>
+                                    <div>
+                                       <span class="badge bg-light-watermelon text-watermelon popular-tag"><span class="tz-icon-red-flag icon-13x me-2"></span> Value for Money</span>
+                                    </div>
+                                 </div>
+                                 <div class="breadcrumb package-cities">
+                                    <li>Makkah 2N</li>
+                                 </div>
+                              </div>
+                              <!-- begin::package-itenary -->
+                              <div class="div d-flex justify-content-end flex-column gap-2 gap-lg-3 px-0 package-itenary">
+                                 <!-- begin::flight-itenary -->
+                                 <div class="text-secondary fs-7 d-md-flex d-none flex-wrap gap-3 align-items-center">
+                                    <div><span class="tz-icon-flight d-inline-block icon-20x"></span></div>
+                                    <span>London - Jeddah</span>
+                                    <div><span class="tz-icon-flight-return d-inline-block icon-18x"></span></div>
+                                    <span>Riyadh - London</span>
+                                 </div>
+                                 <!-- end::flight-itenary -->
+                                 <!-- begin::hotel-itenary -->
+                                 <div class="d-flex gap-3 align-items-center">
+                                    <!-- begin::service-icon -->
+                                    <div><span class="tz-icon-hotel-blue d-inline-block icon-20x"></span></div>
+                                    <!-- end::service-icon -->
+                                    <div class="badge badge-light-warning fs-6 lh-0 d-flex align-items-center gap-1"><span>5</span> <i class="tz-icon-star-fill icon-16x"></i></div>
+                                    <!-- begin::service-title -->
+                                    <div>
+                                       <span class="text-secondary service-title">
+                                       Blue Coral Hotel (Makkah)
+                                       </span>
+                                       <span class="fs-4 text-gray-300 px-1">•</span>
+                                       <span class="text-secondary service-title ">1.3km from Holy Kaaba</span>
+                                    </div>
+                                    <!-- end::service-title -->
+                                 </div>
+                                 <!-- end::hotel-itenary -->
+                                 <!-- begin::car-itenary -->
+                                 <div class="breadcrumb d-flex align-items-center package-service">
+                                    <!-- begin::service block -->
+                                    <div class="d-flex gap-2 align-items-center">
+                                       <div class="tz-icon-car icon-20x service-icon"></div>
+                                       <span class="text-secondary service-title">
+                                       Transfers included
+                                       </span>
+                                    </div>
+                                    <!-- end::service block -->
+                                    <!-- begin::service block -->
+                                    <div class="d-flex gap-2 align-items-center disable">
+                                       <div class="tz-icon-activity icon-20x service-icon"></div>
+                                       <span class="text-secondary service-title">
+                                       Activities included
+                                       </span>
+                                    </div>
+                                    <!-- end::service block -->
+                                 </div>
+                                 <!-- end::car-itenary -->
+                                  <a href="detail-static.html" class="text-primary fw-medium fs-7 service-title" target="">View more</a>
+                              </div>
+                              <!-- end::package-itenary -->
+                           </div>
+                           <!-- end::card-body -->
+                           <hr class="mb-0">
+                           <!-- begin::package-price -->
+                           <div class="card-footer p-5 border-0 package-price w-auto">
+                              <!-- begin::rates -->
+                              <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gap-3 gap-xl-0">
+                                 <div class="d-flex flex-row flex-md-column justify-content-evenly gap-2">
+                                    <div class="w-100">
+                                       <div class="dropdown w-100 w-md-275px w-xl-100">
+                                          <!-- begin::select-field -->
+                                          <div class="dropdown-toggle d-flex flex-stack rounded-1 px-5 py-3 border border-1 border-light-cyan" role="button" id="nightdropdownmenu" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true" data-bs-offset="0,9">
+                                             <span class="fs-6 fs-md-5 fw-medium pe-2">2 Nights</span>
+                                             <span class="tz-icon-arrow-down icon-16x d-inline-block"></span>
+                                          </div>
+                                          <!-- end::select-field -->
+                                          <ul class="dropdown-menu dropdown-menu-end nights-dropdown w-275px px-5 py-3 bg-white rounded-1 border border-1 border-light-cyan shadow-sm">
+                                             <div class="d-flex justify-content-end">
+                                                <!-- <span class="tz-icon-modal-close icon-22x d-block d-md-none border-0  mb-10" data-target="#nightdropdownmenu"></span> -->
+                                             </div>
+                                             <div class="package-months">
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name selected">2 Nights <span class="package-month">Makkah 2N</span></div>
+                                                   <input class="border-light-cyan" type="radio" checked="" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">3 Nights <span class="package-month">Makkah 3N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">4 Nights <span class="package-month">Makkah 4N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">5 Nights <span class="package-month">Makkah 5N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">6 Nights <span class="package-month">Makkah 6N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">7 Nights <span class="package-month">Makkah 7N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers">
+                                                   <div class="package-name">8 Nights <span class="package-month">Makkah 8N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                             </div>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="w-100">
+                                       <select class="form-select" data-hide-search="true" data-control="select2" data-placeholder="Select an option">
+                                          <option value="1">5 Star Hotel</option>
+                                          <option value="2">4 Star Hotel</option>
+                                          <option value="3">3 Star Hotel</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <!-- begin::price -->
+                                    <div class="price d-flex flex-column align-items-end mt-xl-3">
+                                    <div class="text-dark fs-2tx fs-lg-1 fw-medium d-flex align-items-end justify-content-end gap-1">
+                                       <span class="fs-6 mb-1">SAR</span>
+                                       <span>1,408.00</span>
+                                    </div>
+                                    <span class="text-secondary fs-8">Starting from price</span>
+                                    <span class="text-secondary fs-9">Per person on twin sharing</span>
+                                    <!-- begin::view detail btn desktop -->
+                                    <a href="detail-static.html"
+                                       class="btn btn-primary text-white rounded-12 fs-5 py-2 mt-3 w-100 w-md-200px">
+                                    Customize
+                                    </a>
+                                    
+                                    <!-- end::view detail btn desktop -->
+                                 </div>
+                                 <!-- end::price -->
+                              </div>
+                              <!-- end::rates -->
+                           </div>
+                           <!-- end::package-price -->
+                        </div>
+                        <!-- card two end -->
+                        <!-- card third start -->
+                        <div class="card rounded-20 pb-lg-0 flex-xl-row w-100" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
+                           <!-- begin::card-header -->
+                           <div class="card-header w-100 w-xl-250px border-0 px-0 py-0">
+                              <!-- begin::carousel -->
+                              <div id="listthree" class="carousel slide w-100 h-xl-300px" data-bs-ride="carousel">
+                                 <!-- begin::carousel-inner -->
+                                 <div class="carousel-inner">
+                                    <div class="carousel-item w-100 h-xl-300px active" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="carousel-item rounded-start-1 w-100 h-xl-300px" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="carousel-item rounded-start-1 w-100 h-xl-300px" data-bs-interval="10000">
+                                       <img src="../assets/media/bg/home-package_3.jpg" alt="home package" class="img-border img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                 </div>
+                                 <!-- end::carousel-inner -->
+                                 <!-- begin::control-prev -->
+                                 <button class="carousel-control-prev" type="button" data-bs-target="#listthree" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../assets/media/icons/slide-bg-arrow.png" width="30" alt="arrow" class="rounded-20"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                 <!-- end::control-prev -->
+                                 <!-- begin::control-next -->
+                                 <button class="carousel-control-next" type="button" data-bs-target="#listthree" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"><img src="../assets/media/icons/slide-bg-arrow.png" width="30" alt="arrow" class="rounded-20 rotate-180deg"></span>
+                                    <span class="visually-hidden">Next</span>
+                                 </button>
+                                 <!-- end::control-next -->
+                              </div>
+                              <!-- end::carousel -->
+                           </div>
+                           <!-- end::card-header -->
+                           <!-- begin::card-body -->
+                           <div class="card-body d-flex flex-column pb-0 p-5 listing-content">
+                              <div>
+                                 <a href="#" class="package-title">Mecca Madina through Jedda and Riyadh</a>
+                                 <div class="package-badges">
+                                    <div>
+                                       <span class="badge bg-light-green text-green popular-tag"><span class="tz-icon-leaf icon-16x me-2"></span>Sustainable Trip</span>
+                                    </div>
+                                    <div>
+                                       <span class="badge bg-light-watermelon text-watermelon popular-tag"><span class="tz-icon-red-flag icon-13x me-2"></span> Value for Money</span>
+                                    </div>
+                                 </div>
+                                 <div class="breadcrumb package-cities">
+                                    <li>Makkah 2N</li>
+                                 </div>
+                              </div>
+                              <!-- begin::package-itenary -->
+                              <div class="div d-flex justify-content-end flex-column gap-2 gap-lg-3 px-0 package-itenary">
+                                 <!-- begin::flight-itenary -->
+                                 <div class="text-secondary fs-7 d-md-flex d-none flex-wrap gap-3 align-items-center">
+                                    <div><span class="tz-icon-flight d-inline-block icon-20x"></span></div>
+                                    <span>London - Jeddah</span>
+                                    <div><span class="tz-icon-flight-return d-inline-block icon-18x"></span></div>
+                                    <span>Riyadh - London</span>
+                                 </div>
+                                 <!-- end::flight-itenary -->
+                                 <!-- begin::hotel-itenary -->
+                                 <div class="d-flex gap-3 align-items-center">
+                                    <!-- begin::service-icon -->
+                                    <div><span class="tz-icon-hotel-blue d-inline-block icon-20x"></span></div>
+                                    <!-- end::service-icon -->
+                                    <div class="badge badge-light-warning fs-6 lh-0 d-flex align-items-center gap-1"><span>5</span> <i class="tz-icon-star-fill icon-16x"></i></div>
+                                    <!-- begin::service-title -->
+                                    <div>
+                                       <span class="text-secondary service-title">
+                                       Blue Coral Hotel (Makkah)
+                                       </span>
+                                       <span class="fs-4 text-gray-300 px-1">•</span>
+                                       <span class="text-secondary service-title ">1.3km from Holy Kaaba</span>
+                                    </div>
+                                    <!-- end::service-title -->
+                                 </div>
+                                 <!-- end::hotel-itenary -->
+                                 <a href="detail-static.html" class="text-primary fw-medium fs-7 service-title" target="">View more</a>
+                              </div>
+                              <!-- end::package-itenary -->
+                           </div>
+                           <!-- end::card-body -->
+                           <hr class="mb-0">
+                           <!-- begin::package-price -->
+                           <div class="card-footer p-5 border-0 package-price w-auto">
+                              <!-- begin::rates -->
+                              <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gap-3 gap-xl-0">
+                                 <div class="d-flex flex-row flex-md-column justify-content-evenly gap-2">
+                                    <div class="w-100">
+                                       <div class="dropdown w-100 w-md-275px w-xl-100">
+                                          <!-- begin::select-field -->
+                                          <div class="dropdown-toggle d-flex flex-stack rounded-1 px-5 py-3 border border-1 border-light-cyan" role="button" id="nightdropdownmenu" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true" data-bs-offset="0,9">
+                                             <span class="fs-6 fs-md-5 fw-medium pe-2">2 Nights</span>
+                                             <span class="tz-icon-arrow-down icon-16x d-inline-block"></span>
+                                          </div>
+                                          <!-- end::select-field -->
+                                          <ul class="dropdown-menu dropdown-menu-end nights-dropdown w-275px px-5 py-3 bg-white rounded-1 border border-1 border-light-cyan shadow-sm">
+                                             <div class="d-flex justify-content-end">
+                                                <!-- <span class="tz-icon-modal-close icon-22x d-block d-md-none border-0  mb-10" data-target="#nightdropdownmenu"></span> -->
+                                             </div>
+                                             <div class="package-months">
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name selected">2 Nights <span class="package-month">Makkah 2N</span></div>
+                                                   <input class="border-light-cyan" type="radio" checked="" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">3 Nights <span class="package-month">Makkah 3N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">4 Nights <span class="package-month">Makkah 4N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">5 Nights <span class="package-month">Makkah 5N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">6 Nights <span class="package-month">Makkah 6N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers mb-3">
+                                                   <div class="package-name">7 Nights <span class="package-month">Makkah 7N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                                <label class="d-flex justify-content-between align-items-centers">
+                                                   <div class="package-name">8 Nights <span class="package-month">Makkah 8N</span></div>
+                                                   <input class="border-light-cyan" type="radio" name="packagemonth" value="package">
+                                                </label>
+                                             </div>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="w-100">
+                                       <select class="form-select" data-hide-search="true" data-control="select2" data-placeholder="Select an option">
+                                          <option value="1">5 Star Hotel</option>
+                                          <option value="2">4 Star Hotel</option>
+                                          <option value="3">3 Star Hotel</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <!-- begin::price -->
+                                    <div class="price d-flex flex-column align-items-end mt-xl-3">
+                                    <div class="text-dark fs-2tx fs-lg-1 fw-medium d-flex align-items-end justify-content-end gap-1">
+                                       <span class="fs-6 mb-1">SAR</span>
+                                       <span>1,408.00</span>
+                                    </div>
+                                    <span class="text-secondary fs-8">Starting from price</span>
+                                    <span class="text-secondary fs-9">Per person on twin sharing</span>
+                                    <!-- begin::view detail btn desktop -->
+                                    <a href="detail-static.html"
+                                       class="btn btn-primary text-white rounded-12 fs-5 py-2 mt-3 w-100 w-md-200px">
+                                    Customize
+                                    </a>
+                                    <!-- end::view detail btn desktop -->
+                                 </div>
+                                 <!-- end::price -->
+                              </div>
+                              <!-- end::rates -->
+                           </div>
+                           <!-- end::package-price -->
+                        </div>
+                        <!-- card thitd end -->
+                        <div class="text-center mx-auto">
+                           <!-- <div class="d-flex align-items-center gap-3 rounded-12 px-7 py-3 border border-1 border-light-cyan mb-4">
+                              <span class="text-blue fw-bold fs-5">Loading results</span>
+                              <img src="../assets/media/icons/load-more.png" alt="load" />
+                           </div> -->
+                           <!--begin::No result found -->
+                           <div class="d-none">
+                              <img src="../assets/media/icons/no-result-found.png" class="mb-8" alt="no-resilt" />
+                              <h1>No results found</h1>
+                              <p class="text-secondary fs-7">Clear your filters or try a <br> different filters.</p>
+                           </div>
+                           <!--end::No result found -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- begin::filter modal -->
+      <!-- package-month filter -->
+      <div class="modal fade" id="package-month-modal" tabindex="-1" aria-labelledby="filter-modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header p-5">
+                  <h1 class="modal-title fs-5" id="filter-modalLabel">Packages for Month</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0 filter-left">
+                  <div class="filter-card m-0 p-0">
+                     <div class="package-months" path="../common-filter/package-filter/package-month.html"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- package-month filter end -->
+
+      <!-- Flight filter -->
+      <div class="modal fade" id="flight-modal" tabindex="-1" aria-labelledby="filter-modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header p-5">
+                  <h1 class="modal-title fs-5" id="filter-modalLabel">Flight</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0 filter-left">
+                  <div class="filter-card m-0 p-0">
+                     <div class="hotel-category" path="../common-filter/package-filter/flight.html"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Flight filter end -->
+
+      <!-- Hotel Category filter -->
+      <div class="modal fade" id="hotel-category-modal" tabindex="-1" aria-labelledby="filter-modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header p-5">
+                  <h1 class="modal-title fs-5" id="filter-modalLabel">Hotel Category</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0 filter-left">
+                  <div class="filter-card m-0 p-0">
+                     <div class="hotel-category" path="../common-filter/package-filter/hotel-category.html"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Hotel Category end -->
+
+      <!-- Select city filter -->
+      <div class="modal fade" id="city-modal" tabindex="-1" aria-labelledby="filter-modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header p-5">
+                  <h1 class="modal-title fs-5" id="filter-modalLabel">Select City</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0 filter-left">
+                  <div class="filter-card m-0 p-0">
+                     <div class="package-months" path="../common-filter/package-filter/select-city.html"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Select city end -->
+
+      <!-- Package Nights filter -->
+      <div class="modal fade" id="package-night-modal" tabindex="-1" aria-labelledby="filter-modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header p-5">
+                  <h1 class="modal-title fs-5" id="filter-modalLabel">Total Package Nights</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-5 pt-0 filter-left">
+                  <div class="filter-card m-0 p-0">
+                     <div class="package-months" path="../common-filter/package-filter/package-night.html"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Package Nights end -->
+
+      <!-- end::filter modal -->
+      <!--begin::filter drawer-->
+      <div id="kt_drawer_listing_filter_view"
+         data-kt-drawer="true"
+         data-kt-drawer-name="chat"
+         data-kt-drawer-activate="true"
+         data-kt-drawer-overlay="true"
+         data-kt-drawer-width="{default:'100%', 'md': '50%', 'xl': '55%'}"
+         data-kt-drawer-direction="start"
+         data-kt-drawer-permanent="true"
+         data-kt-drawer-toggle="#kt_drawer_listing_filter_button"
+         data-kt-drawer-close="#kt_drawer_listing_filter_close">
+         <!--begin::Messenger-->
+         <div class="card w-100 rounded-0 border-0" id="kt_drawer_listing_filter">
+            <!--begin::Card header-->
+            <div class="card-header rounded-0" style="background-color: #3D2B75;" id="kt_drawer_listing_filter_header">
+               <div class="card-title">
+                  <h2 class="fs-lg-11 fw-medium text-white pe-2">Filters</h2>
+                  <span class=" badge badge-circle badge-info">1</span>
+               </div>
+               <div class="card-toolbar">
+                  <!--begin::Close-->
+                  <div class="btn btn-sm btn-icon btn-active-light-primary" id="kt_drawer_listing_filter_close">
+                     <span class="tz-icon-close-white icon-20x"></span>
+                  </div>
+                  <!--end::Close-->
+               </div>
+            </div>
+            <!--end::Card header-->
+            <!--begin::Card body-->
+            <div class="card-body bg-light-secondary p-5 pe-7" id="kt_drawer_listing_filter_body">
+               <!--begin::Messages-->
+               <div class="scroll-y me-n5 pe-5" data-kt-element="messages" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_drawer_listing_filter_header, #kt_drawer_listing_filter_footer" data-kt-scroll-wrappers="#kt_drawer_listing_filter_body" data-kt-scroll-offset="0px">
+                  <div class="row filter-left pt-0">
+                     <div>
+                        <div class="filter-card d-md-none">
+                           <div class="package-months">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                       <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#packagenight" aria-expanded="true" aria-controls="packagenight">
+                                       Sorted by
+                                       </button>
+                                    </h2>
+                                    <div id="packagenight" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <div class="mt-5">
+                                             <label class="d-flex justify-content-between align-items-centers mb-3">
+                                             <span class="package-name">Best</span>
+                                             <input class="border-light-cyan" type="radio" name="price" value="package">
+                                             </label>
+                                             <label class="d-flex justify-content-between align-items-centers mb-3">
+                                             <span class="package-name selected">Price (High to low)</span>
+                                             <input class="border-light-cyan" type="radio" checked name="price" value="package">
+                                             </label>
+                                             <label class="d-flex justify-content-between align-items-centers mb-3">
+                                             <span class="package-name">Price (Low to high)</span>
+                                             <input class="border-light-cyan" type="radio" name="price" value="package">
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter-card">
+                           <div class="package-months">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                       <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#packagemonth" aria-expanded="true" aria-controls="packagemonth">
+                                       Packages for Month
+                                       </button>
+                                    </h2>
+                                    <div id="packagemonth" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body" path="../common-filter/package-filter/package-month.html">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter-card">
+                           <div class="hotel-category">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                       <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#flight" aria-expanded="true" aria-controls="flight">
+                                       Flight
+                                       </button>
+                                    </h2>
+                                    <div id="flight" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body" path="../common-filter/package-filter/flight.html">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter-card">
+                           <div class="hotel-category">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                       <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#city" aria-expanded="true" aria-controls="city">
+                                       Hotel Category
+                                       </button>
+                                    </h2>
+                                    <div id="city" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body" path="../common-filter/package-filter/hotel-category.html">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter-card">
+                           <div class="package-months">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                       <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#city" aria-expanded="true" aria-controls="city">
+                                       Select City
+                                       </button>
+                                    </h2>
+                                    <div id="city" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body" path="../common-filter/package-filter/select-city.html">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter-card">
+                           <div class="package-months">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                       <button class="accordion-button main-title" type="button" data-bs-toggle="collapse" data-bs-target="#packagenight" aria-expanded="true" aria-controls="packagenight">
+                                       Total Package Nights
+                                       </button>
+                                    </h2>
+                                    <div id="packagenight" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body" path="../common-filter/package-filter/package-night.html">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--end::Messages-->
+            </div>
+            <!--end::Card body-->
+            <!--begin::Card footer-->
+            <div class="card-footer shadow-sm d-flex justify-content-between gap-5" id="kt_drawer_listing_filter_footer">
+               <button type="button" class="btn btn-outline text-blue w-100 my-0 ms-0 h-56px fs-five fw-bold rounded-one btn-active-light-primary" data-bs-dismiss="modal">Clear all</button>
+               <button type="button" class="btn btn-primary text-white w-100 bg-blue m-0 h-56px fs-five fw-normal ls-one rounded-one">
+               Apply
+               </button>
+            </div>
+            <!--end::Card footer-->
+         </div>
+         <!--end::Messenger-->
+      </div>
+      <!--end::filter drawer-->
+      <!-- <div path="../common/login-modal.html" class="modal fade"  id="LoginModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"></div> -->
+      <div path="../common/agent-contact-modal.html" class="modal fade"  id="AgentModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+      <!-- metronic js -->
+      <script src="../assets/js/global/script-bundle.min.js"></script>
+      <script src="../assets/js/package-listing-plugin.min.js"></script>
+      <!-- custom js -->
+      <script src="../assets/js/package.js"></script>
+
+      <script>
+        $(document).ready(function () {
+    $(document).on("click", ".continue-btn", function () {
+        $("#login").addClass('d-none');
+        $("#otp-receive").removeClass('d-none');
+    });
+
+    $(document).on("click", ".back-login-btn", function () {
+        $("#login").removeClass('d-none');
+        $("#otp-receive").addClass('d-none');
+    });
+});
+    </script>
+   </body>
+</html>
