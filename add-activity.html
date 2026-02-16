@@ -532,18 +532,16 @@ Visit the symbolic sites in Makkah with our experienced Ziarah guides.</span> <s
     });
    </script>
    <script>
-    document.querySelectorAll(".activity-thumb").forEach((thumb) => {
-  thumb.addEventListener("click", function () {
-    document
-      .querySelectorAll(".activity-thumb")
-      .forEach((t) => t.classList.remove("active"));
-
+    document.querySelectorAll(".activity-thumb").forEach(function(thumb) {
+  thumb.addEventListener("click", function() {
+    var media = this.closest(".activity-media");
+    if (!media) return;
+    media.querySelectorAll(".activity-thumb").forEach(function(t) { t.classList.remove("active"); });
     this.classList.add("active");
-
-    document.getElementById("mainHotelImage").src = this.src;
+    var mainImg = media.querySelector(".hotel-main-image");
+    if (mainImg) mainImg.src = this.src;
   });
 });
-
    </script>
 </body>
 </html>
