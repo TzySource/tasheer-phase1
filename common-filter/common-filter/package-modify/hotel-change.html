@@ -1,0 +1,965 @@
+<div class="card bg-light-secondary w-100 hotel-change-view">
+    <!--begin::Card header-->
+    <div class="card-header bg-white py-1 border-bottom rounded-0"
+    id="kt_drawer_hotel_view_header">
+    <!--begin::Title-->
+    <div class="card-title my-0">
+        <!--begin::User-->
+        <h2 class="fw-medium">Change Hotel</h2>
+        <!--end::User-->
+    </div>
+    <!--end::Title-->
+    <!--begin::Card toolbar-->
+    <div class="card-toolbar my-0">
+        <!--begin::Close-->
+        <div class="btn btn-sm btn-icon btn-active-light-primary"
+            id="kt_drawer_hotel_filter_close">
+            <span class="filter-control"></span>
+        </div>
+        <!--end::Close-->
+    </div>
+    <!--end::Card toolbar-->
+    </div>
+    <!--end::Card header-->
+    <!--begin::Card body-->
+   <div class="card-body hover-scroll-overlay-y">
+        <!-- begin::selected hotel -->
+        <div class="d-flex flex-column-reverse flex-lg-row justify-content-between gap-4 p-5 bg-white rounded-2 border border-2 border-info">
+            <div class="d-flex gap-4">
+                <div class="symbol symbol-100px symbol-2by3">
+                <img src="https://media-distribution.traveazy.com/hotels/images/467521/64b82c89e86c6426eee21b72/large.jpg" alt="Makarem Al Bait Hotel" class="w-100px object-fit-cover">
+                </div>
+                <div class="d-flex flex-column gap-2">
+                <h5 class="mb-0">Makarem Al Bait Hotel</h5>
+                <div class="d-flex gap-1 rating">
+                    <i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill-empty icon-14x"></i>
+                </div>
+                <div><img src="../assets/media/icons/map-pinblue.png" alt="map-icon" width="14" height="14"> Masjid Al Haram Road, Azezyah, Makkah</div>
+                <div><img src="../assets/media/icons/steps.jpg" alt="bed-icon" width="14" height="14"> 2.95 km from Kaaba (Masjid al-Haram)</div>
+                <div><img src="../assets/media/icons/bed-double.png" alt="bed-icon" width="14" height="14"> Standard Twin Room</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-start">
+                <div class="badge badge-info ms-auto fs-6">Selected</div>
+            </div>
+        </div>
+        <!-- end::selected hotel -->
+        <!-- begin::other hotels -->
+        <div class="row row-cols-1 row-cols-md-2 row-gap-5 mt-8 hotel-modify-main p-0">
+            <div class="col">
+                <div class="card rounded-1 hotel-package-select">
+                    <!-- begin::hotel-img -->
+                    <div class="card-header border-0 py-0 px-0">
+                        <!-- begin::carousel -->
+                        <div id="hoteltwo" class="carousel slide pointer-event w-100" data-bs-ride="carousel">
+                            <!-- begin::carousel-indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                            </div>
+                            <!-- end::carousel-indicators -->
+                            <!-- begin::carousel-inner -->
+                            <div class="carousel-inner position-relative">
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-two.jpeg);"></span>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-two.jpeg);"></span>
+                                </div>
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-two.jpeg);"></span>
+                                </div>
+                            </div>
+                            <div class="deal-badge position-absolute top-0 mt-4 ms-4"><span class="badge bg-yellow text-white fw-normal">Room only</span></div>
+                            <!-- end::carousel-inner -->
+                            <!-- begin::control-prev -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hoteltwo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"><img src="https://media.umrahme.com/qa/saas/assets/media/icons/slider-left-arrow.png" alt="arrow" class="rounded-20" width="25" height="25"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <!-- end::control-prev -->
+                            <!-- begin::control-next -->
+                            <button class="carousel-control-next" type="button" data-bs-target="#hoteltwo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"><img src="https://media.umrahme.com/qa/saas/assets/media/icons/slider-right-arrow.png" alt="arrow" class="rounded-20" width="25" height="25"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <!-- end::control-next -->
+                        </div>
+                        <!-- end::carousel -->
+                    </div>
+                    <!-- end::hotel-img -->
+                    <!-- begin::card-body -->
+                    <div class="card-body p-4">
+                        <!-- begin::hotel-title -->
+                        <div class="d-flex gap-2 flex-column">
+                            <!-- begin::hotel-name -->
+                            <span class="fs-5 text-dark fw-medium hotel-name">Fairmont Makkah Clock Royal Tower</span>
+                            <!-- end::hotel-name -->
+                            <!-- begin::rating -->
+                            <div class="d-flex gap-1 rating">
+                            <i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill-empty icon-14x"></i>
+                            </div>
+                            <!-- end::rating -->
+                        </div>
+                        <!-- end::hotel-title -->
+                        <!-- begin::hotel-place -->
+                        <div class="d-flex flex-column mt-2 gap-2 hotel-place">
+                            <span class="fs-7 text-secondary"><img src="../assets/media/icons/location.jpg" alt="location" class="me-1" width="14" height="14">King Abdul Aziz Endowment</span>
+                            <span class="fs-7 text-secondary"><img src="../assets/media/icons/steps.jpg" alt="steps" class="me-1" width="14" height="14">Steps from Holy Kaaba</span>
+                            <div class="excellent">
+                                <span class="sticker fs-9 bg-purple text-white p-1 me-1 rating-radius">95</span>
+                                <span class="text-dark fs-7"><strong>Excellent</strong> (4,765)</span>
+                            </div>
+                        </div>
+                        <!-- end::hotel-place -->
+                    </div>
+                    <!-- end::card-body -->
+                    <div class="separator"></div>
+                    <!-- begin::card-footer -->
+                    <div class="card-footer border-0 p-4">
+                    <!-- begin::detail -->
+                    <div class="d-flex justify-content-between align-items-md-center detail">
+                        <div class="fs-2 text-green d-flex align-items-end fw-semibold justify-content-end justify-content-lg-start">
+                            <span class="text-dark me-1 sar-price">S</span> +650
+                        </div>
+                        <!-- begin::view detail button -->
+                        <button class="btn btn-sm btn-primary text-white fs-7 hotel-detail-btn">View Detail</button>
+                        <!-- end::view detail button -->
+                    </div>
+                    <!-- end::detail -->
+                    </div>
+                    <!-- end::card-footer -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rounded-1 hotel-package-select">
+                    <!-- begin::hotel-img -->
+                    <div class="card-header border-0 py-0 px-0">
+                        <!-- begin::carousel -->
+                        <div id="hotelthree" class="carousel slide pointer-event w-100" data-bs-ride="carousel">
+                            <!-- begin::carousel-indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                            </div>
+                            <!-- end::carousel-indicators -->
+                            <!-- begin::carousel-inner -->
+                            <div class="carousel-inner position-relative">
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-four.jpeg);"></span>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-four.jpeg);"></span>
+                                </div>
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-four.jpeg);"></span>
+                                </div>
+                            </div>
+                            <div class="deal-badge position-absolute top-0 mt-4 ms-4"><span class="badge bg-green text-white fw-normal">Special Deal</span></div>
+                            <!-- end::carousel-inner -->
+                            <!-- begin::control-prev -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hotelthree" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"><img src="https://media.umrahme.com/qa/saas/assets/media/icons/slider-left-arrow.png" alt="arrow" class="rounded-20" width="25" height="25"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <!-- end::control-prev -->
+                            <!-- begin::control-next -->
+                            <button class="carousel-control-next" type="button" data-bs-target="#hotelthree" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"><img src="https://media.umrahme.com/qa/saas/assets/media/icons/slider-right-arrow.png" alt="arrow" class="rounded-20" width="25" height="25"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <!-- end::control-next -->
+                        </div>
+                        <!-- end::carousel -->
+                    </div>
+                    <!-- end::hotel-img -->
+                    <!-- begin::card-body -->
+                    <div class="card-body p-4">
+                        <!-- begin::hotel-title -->
+                        <div class="d-flex gap-2 flex-column hotel-title">
+                            <!-- begin::hotel-name -->
+                            <span class="fs-5 text-dark fw-medium hotel-name">Fairmont Makkah Clock Royal Tower</span>
+                            <!-- end::hotel-name -->
+                            <!-- begin::rating -->
+                            <div class="d-flex gap-1 rating">
+                            <i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill-empty icon-14x"></i>
+                            </div>
+                            <!-- end::rating -->
+                        </div>
+                        <!-- end::hotel-title -->
+                        <!-- begin::hotel-place -->
+                        <div class="d-flex flex-column mt-2 gap-2 hotel-place">
+                            <span class="fs-7 text-secondary"><img src="../assets/media/icons/location.jpg" alt="location" class="me-2" width="14" height="14">King Abdul Aziz Endowment</span>
+                            <span class="fs-7 text-secondary"><img src="../assets/media/icons/steps.jpg" alt="steps" class="me-2" width="14" height="14">Steps from Holy Kaaba</span>
+                            <div class="excellent">
+                                <span class="sticker fs-9 bg-purple text-white p-1 me-1 rating-radius">95</span>
+                                <span class="text-dark fs-7"><strong>Excellent</strong> (4,765)</span>
+                            </div>
+                        </div>
+                        <!-- end::hotel-place -->
+                    </div>
+                    <!-- end::card-body -->
+                    <div class="separator"></div>
+                    <!-- begin::card-footer -->
+                    <div class="card-footer border-0 p-4">
+                    <!-- begin::detail -->
+                    <div class="d-flex justify-content-between align-items-md-center detail">
+                        <div class="fs-2 text-green d-flex align-items-end fw-semibold justify-content-end justify-content-lg-start">
+                            <span class="text-dark me-1 sar-price">s</span> +650
+                        </div>
+                        <!-- begin::view detail button -->
+                        <button class="btn btn-sm btn-primary text-white fs-7 hotel-detail-btn">View Detail</button>
+                        <!-- end::view detail button -->
+                    </div>
+                    <!-- end::detail -->
+                    </div>
+                    <!-- end::card-footer -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rounded-1 hotel-package-select">
+                    <!-- begin::hotel-img -->
+                    <div class="card-header border-0 py-0 px-0">
+                        <!-- begin::carousel -->
+                        <div id="hotelfour" class="carousel slide pointer-event w-100" data-bs-ride="carousel">
+                            <!-- begin::carousel-indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                            </div>
+                            <!-- end::carousel-indicators -->
+                            <!-- begin::carousel-inner -->
+                            <div class="carousel-inner position-relative">
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-four.jpeg);"></span>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-four.jpeg);"></span>
+                                </div>
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <span class="hotel-slide rounded-1" style="background-image: url(../assets/media/hotel/hotel-listing-four.jpeg);"></span>
+                                </div>
+                            </div>
+                            <div class="deal-badge position-absolute top-0 mt-4 ms-4">
+                                <span class="badge bg-green text-white fw-normal">Special Deal</span>
+                            </div>
+                            <!-- end::carousel-inner -->
+                            <!-- begin::control-prev -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hotelfour" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"><img src="https://media.umrahme.com/qa/saas/assets/media/icons/slider-left-arrow.png" alt="arrow" class="rounded-20" width="25" height="25"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <!-- end::control-prev -->
+                            <!-- begin::control-next -->
+                            <button class="carousel-control-next" type="button" data-bs-target="#hotelfour" data-bs-slide="next">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"><img src="https://media.umrahme.com/qa/saas/assets/media/icons/slider-right-arrow.png" alt="arrow" class="rounded-20" width="25" height="25"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <!-- end::control-next -->
+                        </div>
+                        <!-- end::carousel -->
+                    </div>
+                    <!-- end::hotel-img -->
+                    <!-- begin::card-body -->
+                    <div class="card-body p-4">
+                        <!-- begin::hotel-title -->
+                        <div class="d-flex gap-2 flex-column hotel-title">
+                            <!-- begin::hotel-name -->
+                            <span class="fs-5 text-dark fw-medium hotel-name">Fairmont Makkah Clock Royal Tower</span>
+                            <!-- end::hotel-name -->
+                            <!-- begin::rating -->
+                            <div class="d-flex gap-1 rating">
+                            <i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill-empty icon-14x"></i>
+                            </div>
+                            <!-- end::rating -->
+                        </div>
+                        <!-- end::hotel-title -->
+                        <!-- begin::hotel-place -->
+                        <div class="d-flex flex-column mt-2 gap-2 hotel-place">
+                            <span class="fs-7 text-secondary"><img src="../assets/media/icons/location.jpg" alt="location" class="me-2" width="14" height="14">King Abdul Aziz Endowment</span>
+                            <span class="fs-7 text-secondary"><img src="../assets/media/icons/steps.jpg" alt="steps" class="me-2"  width="14" height="14">Steps from Holy Kaaba</span>
+                            <div class="excellent">
+                                <span class="sticker fs-9 bg-purple text-white p-1 me-1 rating-radius">95</span>
+                                <span class="text-dark fs-7"><strong>Excellent</strong> (4,765)</span>
+                            </div>
+                        </div>
+                        <!-- end::hotel-place -->
+                    </div>
+                    <!-- end::card-body -->
+                    <div class="separator"></div>
+                    <!-- begin::card-footer -->
+                    <div class="card-footer border-0 p-4">
+                    <!-- begin::detail -->
+                    <div class="d-flex justify-content-between align-items-md-center detail">
+                        <div class="fs-2 text-green d-flex align-items-end fw-semibold justify-content-end justify-content-lg-start">
+                            <span class="text-dark sar-price me-1">S</span> +650
+                        </div>
+                        <!-- begin::view detail button -->
+                        <button class="btn btn-sm btn-primary text-white fs-7 hotel-detail-btn">View Detail</button>
+                        <!-- end::view detail button -->
+                    </div>
+                    <!-- end::detail -->
+                    </div>
+                    <!-- end::card-footer -->
+                </div>
+            </div>
+        </div>
+        <!-- end::other hotels -->
+   </div>
+    <!--end::Card body-->
+    <!--begin::Card footer-->
+    <div class="card-footer bg-white shadow-sm d-flex gap-2 justify-content-between py-5 px-md-12 rounded-0"
+    id="kt_drawer_flight_filter_footer">
+    <button type="button"
+        class="btn btn-outline fw-bold text-blue border-light-cyan btn-active-light-primary flex-1"
+        id="kt_drawer_hotel_filter_close1">
+    Clear
+    </button>
+    <button type="button"
+        class="btn text-white btn-primary flex-1">
+    Apply
+    </button>
+    </div>
+    <!--end::Card footer-->
+</div>
+
+<div class="card bg-light-secondary w-100 hotel-detail-view hidden">
+    <!--begin::Card header-->
+    <div class="card-header bg-white py-1 border-bottom rounded-0"
+    id="kt_drawer_hotel_view_header">
+    <!--begin::Title-->
+    <div class="card-title my-0">
+        <!--begin::User-->
+        <h2 class="fw-medium">Hotel Detail</h2>
+        <!--end::User-->
+    </div>
+    <!--end::Title-->
+    <!--begin::Card toolbar-->
+    <div class="card-toolbar my-0">
+        <!--begin::Close-->
+        <div class="btn btn-sm btn-icon btn-active-light-primary"
+            id="kt_drawer_hotel_filter_close">
+            <span class="filter-control"></span>
+        </div>
+        <!--end::Close-->
+    </div>
+    <!--end::Card toolbar-->
+    </div>
+    <!--end::Card header-->
+    <!--begin::Card body-->
+   <div class="card-body hotel-detail-main mt-0 hover-scroll-overlay-y">
+        <!-- begin::about hotel info -->
+        <span class="text-dark d-inline-flex back-to-list-btn cursor-pointer">
+                    <img src="../assets/media/icons/back.png" alt="back to page">
+                    Back to Hotel Listing</span>
+        <div id="about">
+            <!-- gallery section start -->
+            <div class="gallery">
+                <div class="row mx-0">
+                <div class="col-8 col-md-6 p-1">
+                    <div class="overlay-wrapper h-100 bgi-no-repeat bgi-position-center bgi-size-cover single-img"
+                        style="background-image: url(https://media-distribution.traveazy.com/hotels/images/467521/64b82c89e86c6426eee21b6f/large.jpg);"></div>
+                </div>
+                <div class="col-4 col-md-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-1 d-none d-md-block">
+                            <div class="multi-img"
+                            style="background-image: url(https://media-distribution.traveazy.com/hotels/images/467521/64b82c89e86c6426eee21b6b/large.jpg);">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1 d-none d-md-block">
+                            <div class="multi-img"
+                            style="background-image: url(https://media-distribution.traveazy.com/hotels/images/467521/64b82c89e86c6426eee21b65/large.jpg); ">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1">
+                            <div class="multi-img"
+                                style="background-image: url(https://media-distribution.traveazy.com/hotels/images/467521/64b82c89e86c6426eee21b72/large.jpg); ">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-1">
+                            <div class="multi-img" style="background-image: url('https://media-distribution.traveazy.com/hotels/images/467521/64b82c89e86c6426eee21b70/large.jpg'); ">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- gallery section end -->
+            <!-- begin::check-in and check-out for mobile -->
+            <div class="d-md-none">
+                <div class="separator my-7"></div>
+                <div class="d-flex justify-content-between detail">
+                    <!-- begin::view detail button -->
+                    <!-- end::view detail button -->
+                    <!-- begin::check-in time -->
+                    <div class="d-flex flex-column gap-2">
+                        <span class="text-secondary fs-6 ">Check In</span>
+                        <span class="text-dark fw-bold fs-6 ">Sept 18 2025</span>
+                    </div>
+                    <!-- end::check-in time -->
+                    <div>
+                        <span class="fs-one fw-semibold text-dark border border-1 border-gray-300 rounded-circle p-4 d-flex align-items-center lh-base"> 1 N </span>
+                    </div>
+                    <!-- begin::check-out time -->
+                    <div class=" d-flex flex-column gap-2 text-end">
+                        <span class="text-secondary fs-6 ">Check Out</span>
+                        <span class="text-dark fw-bold fs-6 ">Apr 10 2024</span>
+                    </div>
+                    <!-- end::check-out time -->
+                </div>
+                <div class="separator mt-7"></div>
+            </div>
+            <!-- end::check-in and check-out for mobile -->
+
+            <!-- begin::vocco makkah hotel detail -->
+            <div class="d-flex flex-column gap-5 mt-5">
+                <div class="rounded-2 bg-white border border-1 border-gray-300 p-4">
+                    <div class="d-flex align-items-start flex-wrap gap-2">
+                        <div class="badge badge-light-primary fw-normal">Luxury</div>
+                        <div class="badge badge-light-primary fw-normal">Family-friendly</div>
+                        <div class="badge badge-light-primary fw-normal">Business</div>
+                        <div class="badge badge-light-primary fw-normal">Free Wi-Fi</div>
+                        <div class="badge badge-light-primary fw-normal">Restaurant</div>
+                        <div class="badge badge-light-primary fw-normal">Spa</div>
+                        <div class="badge badge-light-primary fw-normal">Gym</div>
+                        <div class="badge badge-light-primary fw-normal">Free Parking</div>
+                        <div class="badge badge-light-primary fw-normal">Room Service</div>
+                        <div class="badge badge-light-primary fw-normal">Air Conditioning</div>
+                        <span class="badge badge-light-warning border border-1 border-warning fs-5 lh-0">
+                            4 <i class="tz-icon-star-fill icon-16x ms-1"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <h2 class="mb-1 text-blue fs-4">Makarem Al Bait Hotel</h2>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="tz-icon-mappin-blue icon-16x"></span>
+                                <span class="fs-base fs-md-7 fs-xl-6 text-secondary">Masjid Al Haram Road, Azezyah, Makkah, Saudi Arabia</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <div class="d-grid"><span class="tz-icon-mecca icon-16x"></span></div>
+                                <span class="fs-base fs-md-7 fs-xl-6 text-secondary"> 
+                                    2.95 km from Kaaba (Masjid al-Haram)
+                                </span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <div class="d-flex align-items-center text-white bg-purple p-1 rating-radius fs-9 fw-bold">
+                                    6.8
+                                </div>
+                                <div class="d-flex align-items-center text-dark fs-6 fw-bold">
+                                    Umrahme rating
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <p class="fs-6 mb-0 lh-base text-justify read-more">Makarem Al Bait a 4-star hotel situated in Aziziya, within 10 minutes’ drive from Masjid Al Haram. Hotel provides generous accommodation tailored <span class="dots">...</span> <span class="more-text">to fit the requirements of families, couples, and solo travellers. It is equipped with a private seating area and modern amenities providing guests with an ideal mix of value, comfort, and convenience. This refined and elegant sanctuary draws inspiration from the heritage, and culture, providing an oasis of spiritual calm and charm. There is a 24-hours front desk. The hotel has a business center and offers meeting facilities.</span> <span class="toggle-btn fw-bold text-blue cursor-pointer">Read More</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end::vocco makkah hotel detail -->
+            <!-- begin::highlights -->
+            <div class="rounded-2 bg-white border border-1 border-gray-300 mt-5 p-4">
+                <div class="d-flex flex-column gap-3">
+                    <h2 class="mb-1 text-blue fs-4">Highlights</h2>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 row-gap-7">
+                        <div class="col">
+                            <div class="d-flex align-items-center flex-row flex-lg-column gap-2 gap-md-1 text-center">
+                                <div class="badge badge-circle bg-light-cyan p-5">
+                                    <img src="../assets/media/icons/hotel-blue.svg" alt="" width="18">
+                                </div>
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Modern 4-Star Hotel</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center flex-row flex-lg-column gap-2 gap-md-1 text-center">
+                                <div class="badge badge-circle bg-light-cyan p-5">
+                                    <img src="../assets/media/icons/bed-double.png" alt="" width="18">
+                                </div>
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Spacious & Elegant Rooms</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center flex-row flex-lg-column gap-2 gap-md-1 text-center">
+                                <div class="badge badge-circle bg-light-cyan p-5">
+                                    <img src="../assets/media/icons/utensils.png" alt="" width="18">
+                                </div>
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Diverse Dining Options</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center flex-row flex-lg-column gap-2 gap-md-1 text-center">
+                                <div class="badge badge-circle bg-light-cyan p-5">
+                                    <img src="../assets/media/icons/activity.png" alt="" width="18">
+                                </div>
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Convenient Amenities</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center flex-row flex-lg-column gap-2 gap-md-1 text-center">
+                                <div class="badge badge-circle bg-light-cyan p-5">
+                                    <img src="../assets/media/icons/best.png" alt="" width="18">
+                                </div>
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Highly Rated by Guests</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end::highlights -->
+            <!-- begin::Amenities -->
+            <div class="rounded-2 bg-white border border-1 border-gray-300 mt-5 p-4">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-stack"> 
+                        <h2 class="mb-3 text-blue fs-4">Amenities</h2>
+                        <span class="text-blue fw-bold text-decoration-underline cursor-pointer" data-bs-toggle="modal" data-bs-target="#popularamenities">Check more Amenities</span>
+                    </div>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-gap-2">
+                        <div class="col">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Free Wi-Fi</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Family rooms</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">24/7 front desk</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Car Parking</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Restaurants</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Workspaces</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end::Amenities -->
+            <!-- begin::hotel rooms -->
+            <div id="rooms" class="mt-5 room-info">
+                <h2 class="text-blue fs-4 mb-3">Select Rooms</h2>
+                <div class="rounded-2 bg-white border border-1 border-gray-300 p-4">
+                    <div class="d-flex flex-column">
+                            <h4 class="mb-0 fs-6">Change Date and Pax <span class="text-secondary fs-8">(Price may differ)</span></h4>
+                            <span>Check-in: 2 PM | Check-out: 12 PM</span>
+                        </div>
+                </div>
+                <div class="rounded-2 bg-white border border-1 border-gray-300 mt-5 p-4">
+                    <!-- begin::room filter -->
+                    <select name="room-filter" class="form-select mb-5 me-auto">
+                        <option value="Room Filter">Room Filter</option>
+                        <option value="all">All</option>
+                        <option value="free">Free Cancelation</option>
+                        <option value="refund">Non Refundable</option>
+                    </select>
+                     <!-- end::room filter -->
+                    <div class="d-flex flex-stack rounded-1 border border-1 border-info p-4 mb-7">
+                        <div class="d-flex align-items-start gap-2">
+                            <span class="bg-violet text-white fs-7 fw-bold px-2 py-2 rounded-8">1X</span>
+                            <div>
+                                <h2 class="mb-1 fs-5">Standard Twin Room</h2>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Free Wi-Fi</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Free Self Parking</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="badge badge-info fs-6">Selected</div>
+                    </div>
+                    <!-- begin::room types -->
+                    <div class="row position-relative">
+                        <div class="col-12 col-md-4">
+                            <div class="pe-4 h-100" style="border-right: 1px solid var(--bs-gray-300);">
+                                <div class="card position-sticky" style="top: 12rem;">
+                                    <div class="card-header border-0 py-0 px-0 hotel-img">
+                                        <div id="hotelOne" class="carousel slide w-100" data-bs-ride="carousel">
+                                            <!-- begin::carousel-indicators -->
+                                            <div class="carousel-indicators z-index-1">
+                                            <button type="button" data-bs-target="#hotelOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#hotelOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#hotelOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <!-- end::carousel-indicators -->
+                                            <!-- begin::carousel-inner -->
+                                            <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <div class="rounded-16 h-175px bgi-position-center bgi-no-repeat bgi-size-cover" style="background-image: url(../assets/media/bg/hotel-slide-1.jpg);">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <div class="rounded-16 h-175px bgi-position-center bgi-no-repeat bgi-size-cover" style="background-image: url(../assets/media/bg/hotel-slide-2.jpg);">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <div class="rounded-16 h-175px bgi-position-center bgi-no-repeat bgi-size-cover" style="background-image: url(../assets/media/bg/hotel-slide-3.jpg);">
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <!-- end::carousel-inner -->
+                                            <!-- begin::control-prev -->
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#hotelOne" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../assets/media/icons/slider-left-arrow.svg" width="25" alt="arrow"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <!-- end::control-prev -->
+                                            <!-- begin::control-next -->
+                                            <button class="carousel-control-next" type="button" data-bs-target="#hotelOne" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"><img src="../assets/media/icons/slider-right-arrow.svg" width="25" alt="arrow"></span>
+                                            <span class="visually-hidden">Next</span>
+                                            </button>
+                                            <!-- end::control-next -->
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-0 pb-0 pt-4">
+                                        <div class="d-flex align-items-start gap-2 mb-2">
+                                            <span class="bg-violet text-white fs-7 fw-bold px-2 py-2 rounded-8">1X</span>
+                                            <div>
+                                                <h3 class="mb-0 fs-5">Standard Twin Room</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                <h5 class="mb-0 fs-7 fw-medium">Free Wi-Fi</h5>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                <h5 class="mb-0 fs-7 fw-medium">Free Self Parking</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column gap-5 room-category">
+                                <div class="rounded-2 border border-1 border-gray-300 p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room Only</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,167.49
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-2 border border-1 border-gray-300 p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room Only</span>
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Suhoor</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-2 border border-1 border-gray-300 p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room</span>
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Iftar</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-2 border border-1 border-gray-300 p-4 morecard" style="display: none;">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room</span>
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Half board</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,932.62
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center viewMoreButton">
+                                    <span class="text-blue fw-bold fs-5 d-flex align-items-center gap-1 cursor-pointer">More Rooms <i class="tz-icon-arrow-down icon-16x d-inline-block"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator my-7"></div>
+                    <div class="row position-relative">
+                        <div class="col-12 col-md-4">
+                            <div class="pe-4 h-100" style="border-right: 1px solid var(--bs-gray-300);">
+                                <div class="card position-sticky" style="top:12rem;">
+                                    <div class="card-header border-0 py-0 px-0 hotel-img">
+                                        <div id="hotelOne" class="carousel slide w-100" data-bs-ride="carousel">
+                                            <!-- begin::carousel-indicators -->
+                                            <div class="carousel-indicators z-index-1">
+                                            <button type="button" data-bs-target="#hotelOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#hotelOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#hotelOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <!-- end::carousel-indicators -->
+                                            <!-- begin::carousel-inner -->
+                                            <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <div class="rounded-16 h-175px bgi-position-center bgi-no-repeat bgi-size-cover" style="background-image: url(../assets/media/bg/hotel-slide-1.jpg);">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <div class="rounded-16 h-175px bgi-position-center bgi-no-repeat bgi-size-cover" style="background-image: url(../assets/media/bg/hotel-slide-2.jpg);">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <div class="rounded-16 h-175px bgi-position-center bgi-no-repeat bgi-size-cover" style="background-image: url(../assets/media/bg/hotel-slide-3.jpg);">
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <!-- end::carousel-inner -->
+                                            <!-- begin::control-prev -->
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#hotelOne" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../assets/media/icons/slider-left-arrow.svg" width="25" alt="arrow"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <!-- end::control-prev -->
+                                            <!-- begin::control-next -->
+                                            <button class="carousel-control-next" type="button" data-bs-target="#hotelOne" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"><img src="../assets/media/icons/slider-right-arrow.svg" width="25" alt="arrow"></span>
+                                            <span class="visually-hidden">Next</span>
+                                            </button>
+                                            <!-- end::control-next -->
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-0 pb-0 pt-4">
+                                        <div class="d-flex align-items-start gap-2 mb-2">
+                                            <span class="bg-violet text-white fs-7 fw-bold px-2 py-2 rounded-8">1X</span>
+                                            <div>
+                                                <h3 class="mb-0 fs-5">Standard Triple Room</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Free Wi-Fi</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Family rooms</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">24/7 front desk</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Car Parking</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Restaurants</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-1">
+                                                        <img src="../assets/media/icons/check.png" alt="check" width="12">
+                                                        <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Workspaces</h5>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column gap-5 room-category">
+                                <div class="rounded-2 border border-1 border-gray-300 p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room Only</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,167.49
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-2 border border-1 border-gray-300 p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room Only</span>
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Suhoor</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-2 border border-1 border-gray-300 p-4">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Room</span>
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-7 fw-medium w-auto px-3 rounded-8 text-wrap">Iftar</span>
+                                            </div>
+                                            <h3 class="fs-5"><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2 fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-sm btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-2 border border-1 border-gray-300 p-4 morecard" style="display: none;">
+                                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5">
+                                        <div class="flex-1">
+                                            <div class="d-flex gap-2 mb-2">
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-5 fw-medium w-auto px-3 rounded-8 text-wrap">Room</span>
+                                                <span class="badge py-2 bg-light-secondary text-secondary fs-5 fw-medium w-auto px-3 rounded-8 text-wrap">Half board</span>
+                                            </div>
+                                            <h3><span class="text-danger">Non Refundable</span> <a href="#" class="tz-icon-info-gray icon-12x d-inline-block" data-bs-toggle="modal" data-bs-target="#nonrefundablemodal"></a></h3>
+                                            <p class="fw-bold mb-1 text-blue cursor-pointer text-decoration-underline" data-bs-toggle="modal" data-bs-target="#cancellationrulemodal">Cancellation Rules</p>
+                                        </div>
+                                        <div class="w-100 w-md-auto">
+                                            <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
+                                                <div class="d-flex flex-column">
+                                                    <div class="fs-2x fw-bold lh-1 text-dark mb-1">
+                                                        <span class="fw-medium sar-price">S</span> 1,932.62
+                                                    </div>
+                                                    <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
+                                                </div>
+                                                <a class="btn btn-primary" href="detail-80.html">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center viewMoreButton">
+                                    <span class="text-blue fw-bold fs-5 d-flex align-items-center gap-1 cursor-pointer">More Rooms <i class="tz-icon-arrow-down icon-16x d-inline-block"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end::room types -->
+                </div>
+            </div>
+            <!-- end::hotel rooms -->
+        </div>
+        <!-- end::about hotel info -->
+   </div>
+    <!--end::Card body-->
+    <!--begin::Card footer-->
+    <div class="card-footer bg-white shadow-sm d-flex gap-2 justify-content-between py-5 px-md-12 rounded-0"
+    id="kt_drawer_flight_filter_footer">
+    <button type="button"
+        class="btn btn-outline fw-bold text-blue border-light-cyan btn-active-light-primary flex-1"
+        id="kt_drawer_hotel_filter_close1">
+    Clear
+    </button>
+    <button type="button"
+        class="btn text-white btn-primary flex-1">
+    Apply
+    </button>
+    </div>
+    <!--end::Card footer-->
+</div>
+
