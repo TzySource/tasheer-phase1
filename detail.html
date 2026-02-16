@@ -542,7 +542,7 @@
                                  <!-- end::payment-option -->
                                  <!-- begin::payment-price -->
                                  <div class="text-end w-100 w-md-auto">
-                                    <a href="../package/flight-modify.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 w-100 w-md-150px detail-btn align"> Add Flight </a>
+                                    <a href="../flight-modify.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 w-100 w-md-150px detail-btn align"> Add Flight </a>
                                  </div>
                                  <!-- end::payment-price -->
                               </div>
@@ -573,7 +573,7 @@
                               <div class="d-flex align-items-start">
                                  <div class="d-flex gap-3 ms-auto">
                                     <a href="../package/hotel-detail.html" class="btn btn-sm btn-light-primary btn-active-light-primary p-1 px-2 hotel-detail-btn" id="kt_drawer_change_hotel">Detail</a>
-                                    <button class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1 hotel-change-button" id="kt_drawer_change_hotel">Change</button>
+                                    <a href="hotel-change.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1 hotel-change-button">Change</a>
                                  </div>
                               </div>
                            </div>
@@ -599,7 +599,7 @@
                               <div class="d-flex align-items-start">
                                  <div class="d-flex gap-3 ms-auto">
                                     <button class="btn btn-sm btn-light-primary btn-active-light-primary p-1 px-2 hotel-detail-btn-1">Detail</button>
-                                    <button class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1 hotel-change-btn-1">Change</button>
+                                    <a href="hotel-change.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1 hotel-change-btn-1">Change</a>
                                  </div>
                               </div>
                            </div> -->
@@ -672,18 +672,28 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p class="text-green fs-7 text-decoration-underline fw-bold mt-1 cursor-pointer">Check more Amenities</p>
+                                            <div class="collapse mt-2" id="moreAmenitiesCard">
+                                                <div class="row row-cols-2 row-gap-2">
+                                                    <div class="col"><div class="d-flex align-items-center"><img alt="Pool" src="https://media-distribution.traveazy.com/hotels/icons/amenities/common.png" width="14" height="14" class="me-2"><div class="fs-7 text-gray-700 ls-one">Swimming Pool</div></div></div>
+                                                    <div class="col"><div class="d-flex align-items-center"><img alt="Gym" src="https://media-distribution.traveazy.com/hotels/icons/amenities/common.png" width="14" height="14" class="me-2"><div class="fs-7 text-gray-700 ls-one">Fitness Centre</div></div></div>
+                                                    <div class="col"><div class="d-flex align-items-center"><img alt="Spa" src="https://media-distribution.traveazy.com/hotels/icons/amenities/common.png" width="14" height="14" class="me-2"><div class="fs-7 text-gray-700 ls-one">Spa & Wellness</div></div></div>
+                                                    <div class="col"><div class="d-flex align-items-center"><img alt="Room Service" src="https://media-distribution.traveazy.com/hotels/icons/amenities/cafe.png" width="14" height="14" class="me-2"><div class="fs-7 text-gray-700 ls-one">Room Service</div></div></div>
+                                                    <div class="col"><div class="d-flex align-items-center"><img alt="Shuttle" src="https://media-distribution.traveazy.com/hotels/icons/amenities/common.png" width="14" height="14" class="me-2"><div class="fs-7 text-gray-700 ls-one">Airport Shuttle</div></div></div>
+                                                    <div class="col"><div class="d-flex align-items-center"><img alt="Laundry" src="https://media-distribution.traveazy.com/hotels/icons/amenities/common.png" width="14" height="14" class="me-2"><div class="fs-7 text-gray-700 ls-one">Laundry</div></div></div>
+                                                </div>
+                                            </div>
+                                            <p class="text-green fs-7 text-decoration-underline fw-bold mt-2 cursor-pointer mb-0 check-more-amenities-card-toggle" data-bs-toggle="collapse" data-bs-target="#moreAmenitiesCard" aria-expanded="false" aria-controls="moreAmenitiesCard">Check more Amenities</p>
                                             <div class="mt-7 text-green fs-7 fw-bold"><img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/user.png" alt="user" width="12" class="me-1">  2 Adults</div>
                                         </div>
                                         <div class="d-flex flex-stack mt-3 w-100">
                                             <div class="d-flex flex-column">
                                                 <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green">
-                                                    <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
+                                                    <span class="fw-normal sar-price">S</span><span>1,408.00</span>
                                                 </div>
                                                 <div class="fs-8 text-secondary fw-normal">Inclusive of all taxes</div>
                                             </div>
                                             <div>
-                                                <a href="hotel-change.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1">Change</a>
+                                                <a href="hotel-detail.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1">Change</a>
                                                 <a href="hotel-detail.html" class="btn btn-sm btn-primary p-2 px-4 rounded-1">Detail</a>
                                             </div>
                                                 
@@ -1361,10 +1371,10 @@
                <div class="card bg-white rounded-2 d-flex p-5 p-lg-8 price-card">
                   <!-- begin::card-header -->
                   <div class="card-header d-none d-lg-block border-0 px-0 min-h-1px">
-                     <div class="d-flex justify-content-end align-items-end flex-column" data-bs-toggle="collapse"
+                     <div class="d-flex justify-content-start align-items-start flex-column" data-bs-toggle="collapse"
                         href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
-                        <div class="d-flex align-items-end gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold">
-                           <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
+                        <div class="d-flex align-items-start gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold">
+                           <span class="fw-normal sar-price">S</span><span>1,408.00</span>
                         </div>
                         <div class="fs-8 text-secondary fw-normal">Inclusive of all taxes</div>
                      </div>
@@ -1518,10 +1528,10 @@
                         <a href="../package/traveler-info.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 flex-1">
                            Book
                         </a>
-                        <div class="d-flex d-lg-none justify-content-end align-items-end flex-column flex-1" data-bs-toggle="collapse"
+                        <div class="d-flex d-lg-none justify-content-start align-items-start flex-column flex-1" data-bs-toggle="collapse"
                         href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
-                           <div class="d-flex align-items-end gap-1 fs-2x fw-bold">
-                              <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
+                           <div class="d-flex align-items-start gap-1 fs-2x fw-bold">
+                              <span class="fw-normal sar-price">S</span><span>1,408.00</span>
                            </div>
                            <div class="fs-9 text-secondary fw-normal">Inclusive of all taxes</div>
                         </div>
@@ -3682,7 +3692,7 @@
                                                         <div class="w-100 text-start text-md-end pt-0 pt-md-4 mt-auto">
                                                             <!-- <span class="fs-base text-secondary fw-medium mb-1 d-block"><del class="fs-5 fs-lg-8 fs-xl-7"> SAR 1,690.00</del></span> -->
                                                             <div class="text-dark fs-1 fs-large fw-medium d-flex align-items-center justify-content-start justify-content-md-end">
-                                                                <span class="sar-price">SAR</span><span> 1,408.00 </span>
+                                                                <span class="sar-price">S</span><span> 1,408.00 </span>
                                                             </div>
                                                             <div class="w-100 fs-six text-secondary mb-1">
                                                                 Including taxes and fees
@@ -3822,7 +3832,7 @@
                                                         <div class="w-100 text-start text-md-end pt-0 pt-md-4 mt-auto">
                                                             <!-- <span class="fs-base text-secondary fw-medium mb-1 d-block"><del class="fs-5 fs-lg-8 fs-xl-7"> SAR 1,690.00</del></span> -->
                                                             <div class="text-dark fs-1 fs-large fw-medium d-flex align-items-center justify-content-start justify-content-md-end">
-                                                                <span class="sar-price">SAR</span><span> 1,408.00 </span>
+                                                                <span class="sar-price">S</span><span> 1,408.00 </span>
                                                             </div>
                                                             <div class="w-100 fs-six text-secondary mb-1">
                                                                 Including taxes and fees
@@ -5910,7 +5920,6 @@
                                 <div class="d-flex flex-column gap-5">
                                     <div class="d-flex flex-stack"> 
                                         <h2 class="mb-3 text-blue fs-1">Amenities</h2>
-                                        <span class="text-blue fw-bold text-decoration-underline cursor-pointer" data-bs-toggle="modal" data-bs-target="#popularamenities">Check more Amenities</span>
                                     </div>
                                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-gap-2">
                                         <div class="col">
@@ -5950,6 +5959,71 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="collapse mt-3" id="moreAmenities">
+                                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-gap-2">
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Swimming Pool</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Fitness Centre</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Spa & Wellness</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Room Service</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Airport Shuttle</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Laundry Service</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Bar / Lounge</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Elevator</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Non-smoking Rooms</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/check.png" alt="check" width="12">
+                                                    <h5 class="mb-0 fs-5 fs-md-7 fw-medium">Prayer Room</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-blue fw-bold text-decoration-underline cursor-pointer check-more-amenities-toggle mt-3 mb-0" data-bs-toggle="collapse" data-bs-target="#moreAmenities" aria-expanded="false" aria-controls="moreAmenities">Check more Amenities</p>
                                 </div>
                             </div>
                             <!-- end::Amenities -->
@@ -6250,7 +6324,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,167.49
+                                                        <span class="fw-medium sar-price">S</span> 1,167.49
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6273,7 +6347,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6296,7 +6370,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6319,7 +6393,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,932.62
+                                                        <span class="fw-medium sar-price">S</span> 1,932.62
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6433,7 +6507,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,167.49
+                                                        <span class="fw-medium sar-price">S</span> 1,167.49
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6456,7 +6530,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6479,7 +6553,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
+                                                        <span class="fw-medium sar-price">S</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6502,7 +6576,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">SAR</span> 1,932.62
+                                                        <span class="fw-medium sar-price">S</span> 1,932.62
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6590,7 +6664,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">SAR</span>
+                                    <span class="sar-price">S</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6605,7 +6679,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">SAR</span>
+                                    <span class="sar-price">S</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6621,13 +6695,13 @@
                             <div class="d-flex flex-column">
                                 <div class="d-flex">
                                     <div class="d-flex align-items-center text-secondary fs-6 text-decoration-line-through gap-1">
-                                        <span class="sar-price">SAR</span>
+                                        <span class="sar-price">S</span>
                                         <span>1738.27</span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
                                     <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                        <span class="sar-price">SAR</span>
+                                        <span class="sar-price">S</span>
                                         <span>1600.27</span>
                                     </div>
                                 </div>
@@ -6648,7 +6722,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">SAR</span>
+                                    <span class="sar-price">S</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6663,7 +6737,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">SAR</span>
+                                    <span class="sar-price">S</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6678,7 +6752,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">SAR</span>
+                                    <span class="sar-price">S</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6820,7 +6894,7 @@
         <div class="d-flex flex-stack hotel-proces fixed-bottom start-0 end-0 bg-white p-5 shadow-sm d-lg-none">
             <div class="d-flex align-items-start align-items-md-end justify-content-end flex-column">
                 <div class="fs-1 fw-bold lh-1 text-dark d-flex justify-content-end align-items-end mb-0" data-bs-toggle="collapse" data-bs-target="#detailPrice" aria-expanded="false" aria-controls="detailPrice">
-                    <span class="fw-medium sar-price">SAR</span> 1,408.00
+                    <span class="fw-medium sar-price">S</span> 1,408.00
                 </div>
                 <span class="fs-8 text-secondary me-1">Including taxes and fees</span>
             </div>
@@ -8011,8 +8085,32 @@
     document.getElementById("mainHotelImage").src = this.src;
   });
 });
+</script>
 
-   </script>
+<script>
+(function () {
+  var toggle = document.querySelector(".check-more-amenities-toggle");
+  var target = document.getElementById("moreAmenities");
+  if (toggle && target) {
+    target.addEventListener("show.bs.collapse", function () {
+      toggle.textContent = "Check less amenities";
+    });
+    target.addEventListener("hide.bs.collapse", function () {
+      toggle.textContent = "Check more Amenities";
+    });
+  }
+  var cardToggle = document.querySelector(".check-more-amenities-card-toggle");
+  var cardTarget = document.getElementById("moreAmenitiesCard");
+  if (cardToggle && cardTarget) {
+    cardTarget.addEventListener("show.bs.collapse", function () {
+      cardToggle.textContent = "Check less amenities";
+    });
+    cardTarget.addEventListener("hide.bs.collapse", function () {
+      cardToggle.textContent = "Check more Amenities";
+    });
+  }
+})();
+</script>
    
 </body>
 

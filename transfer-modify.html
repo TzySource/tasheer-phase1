@@ -66,7 +66,7 @@
 
                             <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row detail mt-5">
                                 <div class="fs-2x text-primary d-flex align-items-end fw-semibold justify-content-end justify-content-lg-start">
-                                    <span class="fw-medium  sar-price">SAR</span>
+                                    <span class="fw-medium  sar-price">S</span>
                                     +60.77
                                 </div>
                                 <!-- begin::view detail button -->
@@ -125,10 +125,10 @@
                      <div class="card bg-white rounded-2 d-flex p-5 p-lg-8 price-card">
                         <!-- begin::card-header -->
                         <div class="card-header d-none d-lg-block border-0 px-0 min-h-1px">
-                           <div class="d-flex justify-content-end align-items-end flex-column" data-bs-toggle="collapse"
+                           <div class="d-flex justify-content-start align-items-start flex-column" data-bs-toggle="collapse"
                               href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
-                              <div class="d-flex align-items-end gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold">
-                                 <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
+                              <div class="d-flex align-items-start gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold">
+                                 <span class="fw-normal sar-price">S</span><span>1,408.00</span>
                               </div>
                               <div class="fs-8 text-secondary fw-normal">Inclusive of all taxes</div>
                            </div>
@@ -170,8 +170,8 @@
                            <!-- begin::package include -->
                            <div class="mb-3">
                               <div class="separator mb-2 d-none d-lg-block"></div>
-                              <p class="text-center fs-7 fw-bold">Package Includes</p>
-                              <div class="d-flex flex-wrap justify-content-end gap-7 fs-8">
+                              <p class="text-left fs-7 fw-bold">Package Includes</p>
+                              <div class="d-flex flex-wrap justify-content-start gap-7 fs-8">
                                  <div class="d-flex flex-column align-items-center gap-1">
                                     <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/car.png" alt="car" width="22">
                                     <span>Transfer</span>
@@ -259,26 +259,43 @@
                         </div>
                         <!-- end::card-body -->
                         <!-- begin::card-footer -->
-                        <div class="card-footer p-0 pt-lg-4 border-0 d-flex gap-3 flex-stack"> 
-                           <div class="d-flex justify-content-between align-items-center gap-2 flex-1">
+                  <div class="card-footer p-0 pt-lg-4 border-0 d-flex gap-3 flex-stack">
+                     <div class="d-flex gap-2 ">
+                        <a href="javascript:;" class="btn btn-outline btn-active-light-secondary p-3 d-none">
+                           <div class="tz-icon-share icon-18x"></div>
+                        </a>
 
-                              <a href="../package/traveler-info.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 flex-1">
-                                 Book
-                              </a>
-                              <div class="d-flex d-lg-none justify-content-end align-items-end flex-column flex-1" data-bs-toggle="collapse"
-                              href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
-                                 <div class="d-flex align-items-end gap-1 fs-2x fw-bold">
-                                    <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
-                                 </div>
-                                 <div class="fs-9 text-secondary fw-normal">Inclusive of all taxes</div>
-                              </div>
-                              <div class="text-end collapsed d-lg-none align-items-center p-4" data-bs-toggle="collapse"
-                              data-bs-target="#detailPackage" aria-expanded="false" aria-controls="detailPackage">
-                                 <i class="tz-icon-lift icon-14x d-inline-block"></i>
-                              </div>
+                        <!-- <a href="javascript:;"
+                           class="btn-quotation-download d-none d-lg-block"
+                           data-useremail="" data-username="">
+                           <img src="https://media.umrahme.com/qa/saas/assets/media/icons/pdf-icon.png" alt="file" width="22">
+                        </a> -->
+                     </div>
+                    
+                     <div class="d-flex justify-content-between align-items-center gap-2 flex-1">
+                        <a href="javascript:;"
+                           class="btn-quotation-download d-block d-lg-none"
+                           data-useremail="" data-username="">
+                              <img src="https://media.umrahme.com/qa/saas/assets/media/icons/pdf-icon.png" alt="file" width="22">
+                        </a>
+                         <button class="btn btn-outline btn-lg fs-6 text-blue rounded-2 py-3 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#customizeModal">Modify</button>
+                        <a href="../package/traveler-info.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 flex-1">
+                           Book
+                        </a>
+                        <div class="d-flex d-lg-none justify-content-end align-items-end flex-column flex-1" data-bs-toggle="collapse"
+                        href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
+                           <div class="d-flex align-items-end gap-1 fs-2x fw-bold">
+                              <span class="fw-normal sar-price">S</span><span>1,408.00</span>
                            </div>
+                           <div class="fs-9 text-secondary fw-normal">Inclusive of all taxes</div>
                         </div>
-                        <!-- end::card-footer -->
+                        <div class="text-end collapsed d-lg-none align-items-center p-4" data-bs-toggle="collapse"
+                        data-bs-target="#detailPackage" aria-expanded="false" aria-controls="detailPackage">
+                           <i class="tz-icon-lift icon-14x d-inline-block"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end::card-footer -->
                      </div>
                   </div>
                </div>
