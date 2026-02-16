@@ -1,0 +1,163 @@
+<style>
+    .otp-receive .form-control {
+        padding: 5px;
+        border-radius: 8px;
+    }
+    .otp-receive .form-control.is-invalid{
+        background-image: none;
+        border-color: var(--bs-danger) !important;
+    }
+
+    /* @media only screen and (max-width: 767px){
+        #login{
+            background-image: url(../assets/media/bg/login-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        #login h1{
+            color: white !important;
+        }
+        #login .call-cta{
+            color: var(--bs-warning) !important;
+        }
+        #login .continue-btn{
+            background-color: var(--bs-info) !important;
+        }
+
+        #login label{
+            color: var(--light-seconary);
+        }
+    } */
+</style>
+    
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row row-cols-1 row-cols-lg-2 mx-0">
+                    <div class="col px-0 d-none d-lg-block h-475px">
+                        <div class="bg-light-info rounded-start-2 h-100 d-flex align-items-center justify-content-center">
+                            <div id="login-carousel" class="carousel h-100 d-flex flex-column justify-content-center slide" data-bs-ride="carousel">
+                                
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item h-100 active">
+                                        <img src="https://media.umrahme.com/qa/saas/assets/media/bg/train-stop.jpg" alt="" class="w-100 h-100 object-fit-cover rounded-start-2">
+                                        <div class="w-100 h-100 position-absolute top-0 rounded-start-2" style="background-color: rgba(0, 0, 0, 0.68);">
+                                            <div class="d-flex flex-column text-start gap-2 carousel-caption start-0 end-0 mb-8 px-7" style="bottom: 9.25rem;">
+                                                <div class="fs-2x mb-5 fw-bold text-white">Login in Simple Steps:</div>
+                                                <div class="d-flex align-items-start gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">1</span></div>
+                                                    <p class="mb-0 fs-6">Enter Your Email Address</p>
+                                                </div>
+                                                <div class="d-flex align-items-start gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">2</span></div>
+                                                    <p class="mb-0 fs-6">Verify Your OTP</p>
+                                                </div>
+                                                <div class="d-flex align-items-start gap-3">
+                                                    <div><span class="badge badge-circle badge-success">3</span></div>
+                                                    <p class="mb-0 fs-6">You're Logged In! Access your account, manage your bookings, and enjoy exclusive features.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="https://media.umrahme.com/qa/saas/assets/media/bg/train-info-3.jpg" alt="" class="w-100 h-100 object-fit-cover rounded-start-2">
+                                        <div class="w-100 h-100 position-absolute top-0 rounded-start-2" style="background-color: rgba(0, 0, 0, 0.68);">
+                                            <div class="d-flex flex-column gap-2 text-start carousel-caption start-0 end-0 mb-8 px-7" style="bottom: 4.25rem;">
+                                                <div class="fs-2x mb-5 fw-bold text-white">Why Log In?</div>
+                                                <div class="d-flex align-items-center gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">1</span></div>
+                                                    <p class="mb-0 fs-6">Faster Access: <span class="fs-7">Save time with pre-filled details.</span></p>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">2</span></div>
+                                                    <p class="mb-0 fs-6">Exclusive Deals: <span class="fs-7">Unlock offers only for registered users.</span></p>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">3</span></div>
+                                                    <p class="mb-0 fs-6">Track Everything: <span class="fs-7">View, manage, and modify your reservations easily.</span></p>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">4</span></div>
+                                                    <p class="mb-0 fs-6">Secure Login: <span class="fs-7">Your data is safe with us.</span></p>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-3 mb-2">
+                                                    <div><span class="badge badge-circle badge-success">5</span></div>
+                                                    <p class="mb-0 fs-6">Personalized Experience: <span class="fs-7">Tailored recommendations just for you.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#login-carousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#login-carousel" data-bs-slide-to="1"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col px-0 h-475px">
+                        <div id="login" class="flip-card-front h-100 px-8  d-flex flex-column justify-content-center">
+                            <div class="text-center mb-9">
+                                <img src="https://media.umrahme.com/qa/saas/assets/media/logo/umrahme-logo-icon-en.png" alt="Umrahme Logo">
+                               <h1 class="fw-normal mt-5">Welcome to Umrahme</h1>
+                               <span class="text-secondary fw-normal">Please Verify Your Details</span>
+                            </div>
+                         
+                            <div class="h-95px mail-input ">
+                                <label for="title" class="form-label text-secondary fs-7">Email address</label>
+                                <input type="email" class="form-control text-dark fs-5 border-gray-500" id="email" required placeholder="Enter your Email ID">
+                                <div class="invalid-feedback">
+                                    Please provide a valid email.
+                                </div>
+                            </div>
+                            <div class="h-95px phone-input d-none">
+                                <label for="title" class="form-label text-secondary fs-7">Phone Number</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]+" maxlength="15" class="form-control text-dark fs-5 border-gray-500 w-100" id="formGroupExampleInput" placeholder="Phone Number">
+                                <div class="invalid-feedback">
+                                    Please provide a valid number.
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="continue-btn btn btn-primary text-white w-100 mt-4">Continue</button>
+                            </div>
+                            <!-- <div class="separator separator-content mt-10 text-nowrap text-secondary">Or Continue With</div> -->
+                            <div class="d-flex justify-content-center mt-5">
+                                <span class="text-blue cursor-pointer fw-bold call-cta">Login/Signup with Mobile</span>
+                                <span class="text-blue cursor-pointer fw-bold mail-cta d-none">Login/Signup with Mail</span>
+                            </div>
+                         </div>
+                         <!-- removable class flip-card-back -->
+                         <div id="otp-receive" class="d-none h-100 px-7 d-flex flex-column justify-content-center otp-receive"> 
+                            <div class="text-center mb-9">
+                                <img src="https://media.umrahme.com/qa/saas/assets/media/logo/umrahme-logo-icon-en.png" alt="Umrahme Logo">
+                               <h1 class="mt-5 fw-normal">Verify OTP</h1>
+                               <h5 class="text-secondary fw-normal fs-7">Kindly enter the 6 digit code to complete the verification process.</h5>
+                               <div class="text-secondary fw-bold">rohit.patwardhan@traveazy.com - <a href="javascript:;" class="fw-normal text-secondary text-decoration-underline">Change</a></div>
+                            </div>
+                            <div id="otp" class="inputs d-flex flex-row justify-content-center gap-2 gap-md-3 mx-auto mt-2 w-50">
+                               <input class="form-control rounded-8 border-1 w-40px h-40px text-center otp-input border-gray-500" type="text" id="otp-1" maxlength="1" />
+                               <input class="form-control rounded-8 border-1 w-40px h-40px text-center otp-input border-gray-500" type="text" id="otp-2" maxlength="1" />
+                               <input class="form-control rounded-8 border-1 w-40px h-40px text-center otp-input border-gray-500" type="text" id="otp-3" maxlength="1" />
+                               <input class="form-control rounded-8 border-1 w-40px h-40px text-center otp-input border-gray-500" type="text" id="otp-4" maxlength="1" />
+                               <input class="form-control rounded-8 border-1 w-40px h-40px text-center otp-input border-gray-500" type="text" id="otp-5" maxlength="1" />
+                               <input class="form-control rounded-8 border-1 w-40px h-40px text-center otp-input border-gray-500" type="text" id="otp-6" maxlength="1" />
+                            </div>
+                            <div class="text-center">
+                               <div class="d-flex justify-content-center align-items-center my-7">
+                                  <span class="text-blue fw-normal fs-4">Resend OTP</span>
+                                  <span id="timer" class="text-watermelon ps-2">59s</span>
+                               </div>
+                               <div class="mb-2 fs-8">Ensure you check your spam/junk folder if you don't see the email.</div>
+                               <button id="flip-card-btn-turn-to-front" type="button" class="btn btn-primary text-white w-100">Verify OTP</button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

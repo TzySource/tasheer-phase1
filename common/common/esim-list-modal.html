@@ -1,0 +1,399 @@
+<style>
+    .esim-list .nav-link {
+    border: 0;
+    font-size: 14px;
+    padding: .5rem 3rem;
+    border: 1px solid #bababa;
+    border-radius: .95rem;
+    white-space: nowrap;
+    margin-bottom: 1px;
+    }
+    .esim-list .nav-link.active {
+    background-color: #fcf2e8;
+    border: 1px solid var(--bs-warning);
+    color: #da7c00;
+    font-weight: bold;
+    }
+    .esim-list .navbar-nav{
+            scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow: auto;
+    }
+</style>
+
+<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header flex-column justify-content-center position-relative border-0">
+            <h3 class="modal-title text-center fs-1" id="exampleModalLabel">Saudi Arabia eSIM Plans</h3>
+            <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="fs-5">We can offer discount on sim | Cheapest rate generated</div>
+            <nav class="navbar navbar-expand-sm pb-0 esim-list mt-2 w-100" id="esim-navbar">
+                <ul class="navbar-nav nav-tabs flex-row gap-4 border-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PrepaidPlan">Prepaid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PostpaidPlan">Postpaid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#DataOnly">Data Only</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#DataVoiceText">Data + Voice + Text</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="modal-body pt-0" style="max-height: 500px" id="esimScrollContainer" tabindex="0" data-bs-spy="scroll" data-bs-target="#esim-navbar" data-bs-offset="100" data-bs-smooth-scroll="true">
+            <div data-bs-spy="scroll" data-bs-target="#esim-navbar" data-bs-smooth-scroll="true" class="scrollspy-example plans">
+                <div id="PrepaidPlan">
+                    <p class="mb-0 fw-bold fs-5">Prepaid Plans</p>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-8 mt-10 second">
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">1 GB - 7 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div>Cover Saudi Arabia + 13 Countries</div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">1 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">7 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="d-flex gap-1">
+                                                    <div class="fs-5 text-decoration-line-through"><span class="fw-medium sar-price">S</span> 41.06</div> /
+                                                    <div class="fs-3 fw-bold text-dark"><span class="fw-medium sar-price">S</span> 39.00</div>
+                                                </div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">eSIM Traveler</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">3 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">15 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="d-flex gap-1">
+                                                    <div class="fs-5 text-decoration-line-through"><span class="fw-medium sar-price">S</span>27.57</div> /
+                                                    <div class="fs-3 fw-bold text-dark"><span class="fw-medium sar-price">S</span>26.26</div>
+                                                </div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">1 GB - 7 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">5 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">30 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>35.00</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="PostpaidPlan">
+                    <p class="mb-0 fw-bold fs-5 mt-10">Postpaid Plans</p>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-8 mt-10 second">
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">1 GB - 7 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">1 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">7 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>16.88</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">eSIM Traveler</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">3 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">15 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>26.26</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">1 GB - 7 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">5 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">30 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>35.00</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="DataVoiceText">
+                    <p class="mb-0 fw-bold fs-5 mt-10">Text/Call Plans</p>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-8 mt-10 second">
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">1 GB - 10 SMS - 10 Mins - 7 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">1 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> CALLS</div>
+                                            <div class="fw-bold">1O Mins</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> TEXT</div>
+                                            <div class="fw-bold">100 SMS</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">7 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>72.30</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">2 GB - 20 SMS - 20 Mins - 15 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">2 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> CALLS</div>
+                                            <div class="fw-bold">20 Mins</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> TEXT</div>
+                                            <div class="fw-bold">20 SMS</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">15 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>130.14</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="position-relative h-100">
+                                <div class="badge brand-logo position-absolute z-index-1" style="top: -19px; left: 11px;">
+                                    <img src="https://cdn.airalo.com/images/3ac03c39-bae4-45be-83b4-d0c871efd8e6.png" alt="logo" width="90">
+                                </div>
+                                <div class="card esim-bg esim-clip-path p-5 rounded-1 h-100">
+                                    <div class="card-header p-0 text-end justify-content-end border-0 min-h-1px">
+                                        <h5 class="text-wrap w-150px">3 GB - 30 SMS - 30 Mins - 30 Days</h5>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body p-0 d-flex flex-column gap-3 fs-7">
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-bolt"></i> DATA</div>
+                                            <div class="fw-bold">3 GB</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> CALLS</div>
+                                            <div class="fw-bold">30 Mins</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> TEXT</div>
+                                            <div class="fw-bold">30 SMS</div>
+                                        </div>
+                                        <div class="d-flex flex-stack">
+                                            <div><i class="fa-solid fa-calendar"></i> VALIDITY</div>
+                                            <div class="fw-bold">30 Days</div>
+                                        </div>
+                                    </div>
+                                    <div class="separator my-5"></div>
+                                    <div class="card-body d-flex flex-stack p-0">
+                                        <div class="d-flex flex-stack w-100 mt-auto">
+                                            <div class="d-flex flex-column">
+                                                <div class="fs-3 fw-bold"><span class="sar-price">s</span>173.52</div>
+                                                <div class="fw-medium fs-7">Inclusive of all taxes</div>
+                                            </div>
+                                            <a href="booking.html" class="btn btn-light-warning py-2" id="esim-select-btn" data-bs-dismiss="modal">Select</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        
+    </div>
+</div>

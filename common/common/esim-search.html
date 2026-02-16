@@ -1,0 +1,108 @@
+<!-- begin::search-bar -->
+<div class="search-bar d-flex bg-white flex-1">
+    <div class="px-3 px-md-5 dropdown country-dropdown flex-1">
+        <div class="d-flex flex-stack py-6 cursor-pointer" data-bs-toggle="dropdown" id="selectedCountry">
+            <div class="d-flex algin-items-center">
+                <span class="me-2 fs-6 fs-md-4 text-nowrap" id="countryCode"></span>
+                <span class="text-blue fs-4 w-150px w-sm-200px text-truncate" id="countryName">Select Country</span>
+            </div>
+            <div class="d-flex align-items-center gap-5">
+                <div class="d-flex align-items-center">
+                    <span class="me-2 fs-6 fs-md-4" id="countryFlag"></span>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            
+        </div>
+        <div class="dropdown-menu country-dropdown-menu px-2">
+            <input type="text" class="form-control border border-1 border-secondary rounded-1 py-2 mb-3" placeholder="Search country..." id="countrySearch" onkeyup="filterCountries()">
+            <div class="overflow-y-auto h-200px" id="countryList">
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('AE', 'United Arab Emirates', '../assets/media/icons/flags/ae.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">AE</span>
+                            <span class="text-gray-700 fs-7 ms-2">United Arab Emirates</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/ae.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('TR', 'Turkey', '../assets/media/icons/flags/tr.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">TR</span>
+                            <span class="text-gray-700 fs-7 ms-2">Turkey</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/tr.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('EG', 'Egypt', '../assets/media/icons/flags/eg.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">EG</span>
+                            <span class="text-gray-700 fs-7 ms-2">Egypt</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/eg.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('GB', 'United Kingdom', '../assets/media/icons/flags/gb.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">GB</span>
+                            <span class="text-gray-700 fs-7 ms-2">United Kingdom</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/gb.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('US', 'United States', '../assets/media/icons/flags/us.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">US</span>
+                            <span class="text-gray-700 fs-7 ms-2">United States</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/us.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('FR', 'France', '../assets/media/icons/flags/fr.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">FR</span>
+                            <span class="text-gray-700 fs-7 ms-2">France</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/fr.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('DE', 'Germany', '../assets/media/icons/flags/de.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">DE</span>
+                            <span class="text-gray-700 fs-7 ms-2">Germany</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/de.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('IT', 'Italy', '../assets/media/icons/flags/it.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                        <div>
+                            <span class="fw-bold text-blue">IT</span>
+                            <span class="text-gray-700 fs-7 ms-2">Italy</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/it.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+                <div class="currency-item d-flex align-items-center justify-content-between cursor-pointer" onclick="selectCountry('ES', 'Spain', '../assets/media/icons/flags/es.svg')">
+                    <div class="d-flex flex-stack flex-1">
+                            <div>
+                            <span class="fw-bold text-blue">ES</span>
+                            <span class="text-gray-700 fs-7 ms-2">Spain</span>
+                        </div>
+                        <span><img src="../assets/media/icons/flags/es.svg" alt="uae" width="10"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="listing.html" class="btn btn-primary rounded-pill m-2">
+        <i class="fa-solid fa-magnifying-glass fs-3 mt-1"></i>
+    </a>
+</div>
+<!-- begin::search-bar -->

@@ -1,0 +1,239 @@
+<div class="bg-white listing-footer mt-auto">
+    <!-- begin::container -->
+    <div class="px-8 px-lg-20 pt-8 pt-md-0" style="@Html.Raw(Context.IsTzyAgency()?"":"display:none !important")">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-5 col-xxl-4">
+                <!-- begin::footer logo -->
+                <div class="logo flex-column">
+                    <img src="@agencyBranding.LargeLogo" alt="@agencyBranding.AgencyName">
+                    <div class="d-flex align-items-center gap-6 mt-4 flex-wrap">
+                        <a href="https://www.nusuk.sa" target="_blank">
+                            <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/nusuk-gray.svg" alt="nusuk logo">
+                        </a>
+                        <a href="https://www.nusuk.sa" target="_blank">
+                            <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/ministry-gray.svg" alt="MOH logo">
+                        </a>
+                        <a class="mt-4" href="@HelperExt.B2C_PAYMENT_CERTIFICATE_URL" target="_blank">
+                            <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/sisa-logo.png" class="img-fluid" alt="sisa" width="70">
+                        </a>
+                        <a class="mt-4" href="javascript:;">
+                            <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/haramain-train.png" class="img-fluid" alt="haramain train" width="100">
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-5 mt-4 flex-wrap">
+                        <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/icons/mastercard.svg" class="w-50px" alt="mastercard" />
+                        <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/icons/visa.svg" class="w-50px" alt="visa" />
+                        <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/icons/tabby.svg" class="w-50px" alt="tabby" />
+                        <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/icons/paypal.svg" class="w-50px" alt="paypal" />
+                        <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/icons/applepay.svg" class="w-50px" alt="applepay" />
+                        <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/icons/mada.svg" class="w-50px" alt="mada" />
+                    </div>
+                </div>
+                <!-- end::footer logo -->
+                <div class="address mt-10 mt-xxl-4 d-flex d-md-none d-lg-flex flex-column gap-2" style="@Html.Raw(Context.IsTzyAgency()?"":"display:none !important")">
+                    <p class="fs-7 fw-bold mb-0">@_footer.LBL_CONTACT</p>
+                    <div class="d-flex align-items-center gap-5 fs-7 fw-bold">
+                        <div>@_footer.LBL_KSA: <a href="tel:920002963" lang="auto" dir="ltr" class="text-blue opacity-75">920002963</a></div>
+                        <div>@_footer.LBL_EGYPT: <a href="tel:20221245845" lang="auto" dir="ltr" class="text-blue opacity-75">+20221245845</a></div>
+                    </div>
+                    <div class="d-flex align-items-center gap-5 fs-7 fw-bold">
+                        <div>@_footer.LBL_WORLDWIDE: <a href="tel:97142457300" lang="auto" dir="ltr" class="text-blue opacity-75">+97142457300</a></div>
+                        <div>@_footer.LBL_WHATSAPP: <a href="tel:971523873550" lang="auto" dir="ltr" class="text-blue opacity-75">+971523873550</a></div>
+                    </div>
+                    <div class="d-flex flex-column gap-1 fs-7 fw-bold">
+                        <div>@_footer.LBL_UAE: <a href="tel:800454545" lang="auto" dir="ltr" class="text-blue opacity-75">800454545</a></div>
+                        <div class="fw-normal">@Html.Raw(_footer.LBL_TRAVEAZY_UAE_ADDRESS)</div>
+                    </div>
+                    <div class="d-flex flex-column gap-1 fs-7 fw-bold">
+                        <div>@_footer.LBL_JEDDAH: <a href="tel:233263728" lang="auto" dir="ltr" class="text-blue opacity-75">23326-3728</a></div>
+                        <div class="fw-normal">@Html.Raw(_footer.LBL_TRAVEAZY_JEDDAH_ADDRESS)</div>
+                    </div>
+                </div>
+                <div class="address mt-10 mt-xxl-4 d-none d-md-flex d-lg-none flex-column gap-3">
+                    <p class="fs-7 fw-bold mb-0">@_footer.LBL_CONTACT</p>
+                    <div class="d-flex flex-column gap-2 fs-7 fw-bold">
+                        <div>@_footer.LBL_WORLDWIDE: <a href="tel:97142457300" lang="auto" dir="ltr" class="text-blue opacity-75">+97142457300</a></div>
+                        <div>@_footer.LBL_WHATSAPP: <a href="tel:971523873550" lang="auto" dir="ltr" class="text-blue opacity-75">+971523873550</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9 col-lg-7 col-xxl-8" style="@Html.Raw(Context.IsTzyAgency()?"":"display:none !important")">
+                <div class="d-flex flex-column flex-sm-row flex-md-column flex-xxl-row justify-content-end justify-content-sm-between justify-content-md-end align-items-xxl-start align-items-start align-items-md-end gap-8 mt-4 mt-md-0">
+                <!-- begin::footer nav -->
+                <nav class="navbar py-0 gap-0 gap-sm-10 flex-column flex-sm-row gap-md-17 gap-lg-15 gap-xxl-20 d-flex align-items-start justify-content-lg-end flex-nowrap Fnav">
+                    <!-- begin::menu -->
+                    <div class="menu flex-column">
+                        <div class="menu-item ">
+                            <span class="menu-link text-dark fw-bold fs-7 fs-md-6" style="cursor: text;">@_footer.LBL_QUICK_LINKS</span>
+                        </div>
+                        @{
+                            var homeMenuePath = "home";
+
+                            var homeMenue = HelperExt.GetHeaderMenu("home");
+
+                            if (homeUrl.Equals("mp-home"))
+                            {
+                                homeMenuePath = "mp-hpme";
+                            }
+                            else
+                            {
+                                homeMenuePath = homeMenue.Path;
+                            }
+                        }
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl(homeMenuePath)">@homeMenue.Title[HelperExt.LANGUAGE_CODE]</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/privacy-policy">@_footer.LBL_PRIVACY_POLICY</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/faq">@_footer.LBL_FAQ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/glossary">@_footer.LBL_GLOSSARY</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/contact-us">@_footer.LBL_CONTACT</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/terms-and-conditions">@_footer.LBL_TERMS_OF_USE</a>
+                        </div>
+                    </div>
+                    <div class="menu flex-column">
+                        <div class="menu-item">
+                            <span class="menu-link text-dark fw-bold fs-7 fs-md-6" style="cursor: text;">@_footer.LBL_COMPANY</span>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Html.Raw($"https://blog.umrahme.com/{HelperExt.LANGUAGE_CODE}/")">@_footer.LBL_BLOG</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/about-us">@_footer.LBL_ABOUT</a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="https://traveazy.com/careers/">@_footer.LBL_CAREERS</a>
+                        </div>
+                    </div>
+                    <div class="menu flex-column">
+                        <div class="menu-item">
+                            <span class="menu-link text-dark fw-bold fs-7 fs-md-6">@_footer.LBL_RESOURCES</span>
+                        </div>
+                        
+                        @{
+                            var headerMenue = HelperExt.GetHeaderMenuDetail();
+
+                            foreach (var hmenue in headerMenue.Skip(1))
+                            {
+                                <div class="menu-item">
+                                    <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl(hmenue.Path)">@hmenue.Title[HelperExt.LANGUAGE_CODE]</a>
+                                </div>
+                            }
+                        }
+
+                        <div class="menu-item">
+                            <a class="menu-link text-gray-600" target="_blank" href="@Context.PageUrl("pages")/destinations">@_footer.LBL_DESTINATIONS</a>
+                        </div>
+                        <div class="menu-item d-none">
+                            <a class="menu-link text-gray-600" target="_blank" href="https://blog.umrahme.com/en/">@_footer.LBL_NEWS</a>
+                        </div>
+                    </div>
+                    <!-- end::menu -->
+                </nav>
+                <!-- end::footer navbar -->
+                <!-- begin::download app -->
+                <div class="menu gap-2 d-flex d-md-none d-lg-flex flex-column flex-md-row flex-xxl-column align-items-start align-items-sm-center justify-content-end ms-md-20 ms-lg-0 ps-xl-0 mt-3">
+                    <p class="text-center text-dark fw-bold fs-6 mb-0 me-lg-15 me-xxl-0">@_footer.LBL_DOWNLOAD_APP</p>
+                    <div class="d-flex flex-row flex-xxl-column align-items-center gap-5 gap-xxl-0">
+                        <div class="menu-item py-0 apple">
+                            <a href="https://apps.apple.com/us/app/umrahme/id6473532379" target="_blank" class="menu-link px-0">
+                                <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/app-store.png" alt="@_footer.LBL_APP_STORE" class="w-125px w-md-150px">
+                            </a>
+                        </div>
+                        <div class="menu-item py-0 googlePlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.umrahme.b2c&pcampaignid=web_share" target="_blank" class="menu-link px-0">
+                                <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/google-play.png" alt="@_footer.LBL_GOOGLE_PLAY" class="w-125px w-md-150px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end::download app -->
+                </div>
+            </div>
+            <div class="col-12 d-none d-md-block d-lg-none mt-8" style="@Html.Raw(Context.IsTzyAgency()?"":"display:none !important")">
+                <div class="d-flex align-items-center gap-5 fs-7 fw-bold">
+                    <div>@_footer.LBL_KSA: <a href="tel:920002963" lang="auto" dir="ltr" class="text-blue opacity-75">920002963</a></div>
+                    <div>@_footer.LBL_UAE: <a href="tel:800454545" lang="auto" dir="ltr" class="text-blue opacity-75">800454545</a></div>
+                    <div>@_footer.LBL_EGYPT: <a href="tel:20221245845" lang="auto" dir="ltr" class="text-blue opacity-75">+20221245845</a></div>
+                    <div>@_footer.LBL_JEDDAH: <a href="tel:233263728" lang="auto" dir="ltr" class="text-blue opacity-75">23326-3728</a></div>
+                </div>
+                <div class="d-flex flex-stack gap-1 fs-7 fw-bold mt-3">  
+                    <div class="fw-normal w-66">@Html.Raw(_footer.LBL_TRAVEAZY_UAE_ADDRESS)</div>
+                    <div class="fw-normal">@Html.Raw(_footer.LBL_TRAVEAZY_JEDDAH_ADDRESS)</div>
+                </div>
+                <div class="menu gap-5 d-flex d-lg-flex align-items-center mt-8">
+                    <p class="text-center text-dark fw-bold fs-6 mb-0">@_footer.LBL_DOWNLOAD_APP</p>
+                    <div class="d-flex align-items-center gap-5">
+                        <div class="menu-item py-0 apple">
+                            <a href="https://apps.apple.com/us/app/umrahme/id6473532379" target="_blank" class="menu-link px-0">
+                                <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/app-store.png" alt="@_footer.LBL_APP_STORE" class="w-150px">
+                            </a>
+                        </div>
+                        <div class="menu-item py-0 googlePlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.umrahme.b2c&pcampaignid=web_share" target="_blank" class="menu-link px-0">
+                                <img src="@HelperExt.CDN_CONTENT_BASE_URL/media/logo/google-play.png" alt="@_footer.LBL_GOOGLE_PLAY" class="w-150px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end::container -->
+    <div class="px-8 px-lg-20 mt-7 mb-5" style="@Html.Raw(Context.IsTzyAgency()?"":"display:none !important")">
+        <div class="separator"></div>
+    </div>
+    <!-- begin::copyright -->
+    <div class="px-8 px-lg-20 mb-5 copyright">
+        <div class="d-flex flex-column flex-md-row gap-3 flex-stack">
+            <span class="text-secondary fs-9 fs-md-8">
+                <span>© @DateTime.UtcNow.Year</span>, <span>@agencyBranding.AgencyName</span>
+            </span>
+            <div class="d-flex flex-column flex-md-row gap-3 align-items-center" style="@Html.Raw(Context.IsTzyAgency()?"":"display:none !important")">
+                <div class="connect d-flex flex-column flex-md-row align-items-center gap-2">
+                    <span>@_footer.LBL_CONNECT_WITH_US</span>
+                    <div class="d-flex gap-2">
+                        <div class="d-grid">
+                            <a href="https://www.facebook.com/UmrahME" target="_blank" class="tz-icon-facebook-blue icon-24x"></a>
+                        </div>
+                        <div class="d-grid">
+                            <a href="https://twitter.com/umrahme" target="_blank" class="tz-icon-twitter-blue icon-24x"></a>
+                        </div>
+                        <div class="d-grid">
+                            <a href="https://www.instagram.com/umrahme/" target="_blank" class="tz-icon-insta-blue icon-24x"></a>
+                        </div>
+                        <div class="d-grid">
+                            <a href="https://www.youtube.com/channel/UC5VN4djGipqDeeZSoeLVZ8A" target="_blank" class="tz-icon-youtube-blue icon-24x"></a>
+                        </div>
+                        <div class="d-grid">
+                            <a href="https://www.linkedin.com/company/umrahme" target="_blank" class="tz-icon-linkedin-blue icon-24x"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- begin::back to top -->
+                <div class="menu-item  move-top">
+                    <a href="javascript:;" class="menu-link text-blue lh-sm pe-0 btn-footer-back-to-top">
+                        <span class="menu-title d-flex align-items-start flex-column">
+                            <span class="fs-8 fs-md-7">@_footer.LBL_BACK_TO_TOP</span>
+                        </span>
+                        <span class="menu-icon me-0">
+                            <i class="tz-icon-back-to-top icon-14x"></i>
+                        </span>
+                    </a>
+                </div>
+                <!-- end::back to top -->
+            </div>
+
+        </div>
+    </div>
+    <!-- end::copyright -->
+</div>
