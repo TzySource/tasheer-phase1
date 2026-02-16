@@ -15,6 +15,10 @@
    <link rel="stylesheet" href="https://tasheer-phase1.tzy-source.workers.dev/assets/css/package-style.min.css">
    <link rel="stylesheet" href="https://tasheer-phase1.tzy-source.workers.dev/assets/css/tasheer-package.css">
    <style>
+      /* Scroll offset so section nav doesn’t hide top of content when navigating to Overview, Flights, etc. */
+      #overview, #flight, #hotel, #transfer, #activity, #policy {
+        scroll-margin-top: 60px;
+      }
       
 /* 
       .loading {
@@ -157,7 +161,7 @@
                         class="nav nav-tabs justify-content-between align-items-center flex-nowrap scroll-hover-x overflow-y-hidden">
                         <li class="nav-item ">
                            <a class="nav-link d-flex pt-2 px-3" href="#overview"><span
-                                 class="tz-icon-globe icon-14x d-inline-block me-2"></span>About</a>
+                                 class="tz-icon-globe icon-14x d-inline-block me-2"></span>Overview</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link d-flex pt-2 px-3" href="#flight"><span
@@ -175,9 +179,9 @@
                            <a class="nav-link d-flex pt-2 px-3" href="#activity"><span
                                  class="tz-icon-activity icon-14x d-inline-block me-2"></span>Activities</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                            <a class="nav-link d-flex pt-2 px-3" href="#visa"><img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/visa-blue.svg" alt="visa" width="14" height="14"> Visa</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                            <a class="nav-link d-flex pt-2 px-3" href="#policy"><span
                                  class="tz-icon-policy icon-14x d-inline-block me-2"></span>Policies</a>
@@ -310,7 +314,7 @@
                                              <div class="col-3 col-lg-4 check-in">
                                                 <span class="text-dark fs-3 fw-bold">05:20</span>
                                                 <div class="d-flex align-items-center gap-1">
-                                                    <img src="https://tasheer-phase1.tzy-source.workers.dev/assets/media/tashir-icons/departure-flight.png" alt="departure" width="13">
+                                                    <!-- <img src="https://tasheer-phase1.tzy-source.workers.dev/assets/media/tashir-icons/departure-flight.png" alt="departure" width="13"> -->
                                                     <p class="text-dark fs-7 text-wrap mb-0">Aug 30, Mumbai</p>
                                                 </div>
                                              </div>
@@ -328,7 +332,7 @@
                                              <div class="col-3 col-lg-4 text-end check-out">
                                                 <span class="text-dark fs-3 fw-bold">17:50</span>
                                                 <div class="d-flex align-items-center justify-content-end gap-1">
-                                                    <img src="https://tasheer-phase1.tzy-source.workers.dev/assets/media/tashir-icons/arrival-flight.png" alt="arrival" width="13">
+                                                    <!-- <img src="https://tasheer-phase1.tzy-source.workers.dev/assets/media/tashir-icons/arrival-flight.png" alt="arrival" width="13"> -->
                                                     <p class="text-secondary mb-0 fs-7 text-wrap">Aug 30, Jeddah</p>
                                                 </div>
                                              </div>
@@ -372,10 +376,10 @@
                                  </div>
                                  <div class="col-12 col-md-3">
                                     <div class="d-flex justify-content-between flex-row flex-md-column h-100">
-                                       <div class="d-flex gap-3 ms-auto">
-                                            <div class="btn btn-sm btn-light-primary btn-active-light-primary p-1 px-2" data-bs-toggle="collapse" href="#arrivalFlight" role="button" aria-expanded="false" aria-controls="collapseExample">Flight Detail</div>
-                                            <a href="flight-modify.html" class="btn btn-sm btn-outline btn-outline-secondary p-1 px-2">Change</a>
-                                            <!-- <button class="btn btn-sm btn-light-danger btn-active-light-danger p-1 px-2">Delete</button> -->
+                                       <div class="d-flex gap-2 flex-nowrap align-items-center">
+                                            <div class="btn btn-primary fs-6 text-white fw-medium rounded-2 py-2 px-4" data-bs-toggle="collapse" href="#arrivalFlight" role="button" aria-expanded="false" aria-controls="collapseExample">Detail</div>
+                                            <a href="flight-modify.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1">Change</a>
+                                            <button class="btn btn-sm btn-outline btn-outline-danger p-2 px-3 rounded-1">Delete</button>
                                        </div>
                                     </div>
                                  </div>
@@ -538,7 +542,7 @@
                                  <!-- end::payment-option -->
                                  <!-- begin::payment-price -->
                                  <div class="text-end w-100 w-md-auto">
-                                    <a href="../package/flight-modify.html" class="btn btn-outline btn-outline-secondary btn-active-primary fw-bold detail-btn w-100 w-md-150px fs-8 fs-md-6"> Add Flight </a>
+                                    <a href="../package/flight-modify.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 w-100 w-md-150px detail-btn align"> Add Flight </a>
                                  </div>
                                  <!-- end::payment-price -->
                               </div>
@@ -569,7 +573,7 @@
                               <div class="d-flex align-items-start">
                                  <div class="d-flex gap-3 ms-auto">
                                     <a href="../package/hotel-detail.html" class="btn btn-sm btn-light-primary btn-active-light-primary p-1 px-2 hotel-detail-btn" id="kt_drawer_change_hotel">Detail</a>
-                                    <button class="btn btn-sm btn-outline p-1 px-2 hotel-change-button" id="kt_drawer_change_hotel">Change</button>
+                                    <button class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1 hotel-change-button" id="kt_drawer_change_hotel">Change</button>
                                  </div>
                               </div>
                            </div>
@@ -595,7 +599,7 @@
                               <div class="d-flex align-items-start">
                                  <div class="d-flex gap-3 ms-auto">
                                     <button class="btn btn-sm btn-light-primary btn-active-light-primary p-1 px-2 hotel-detail-btn-1">Detail</button>
-                                    <button class="btn btn-sm btn-outline p-1 px-2 hotel-change-btn-1">Change</button>
+                                    <button class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1 hotel-change-btn-1">Change</button>
                                  </div>
                               </div>
                            </div> -->
@@ -674,7 +678,7 @@
                                         <div class="d-flex flex-stack mt-3 w-100">
                                             <div class="d-flex flex-column">
                                                 <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green">
-                                                    <span class="fw-normal sar-price">S</span><span>1,408.00</span>
+                                                    <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
                                                 </div>
                                                 <div class="fs-8 text-secondary fw-normal">Inclusive of all taxes</div>
                                             </div>
@@ -707,8 +711,8 @@
                            </div>
                            <div class="d-flex align-items-start">
                               <div class="d-flex gap-3 ms-auto">
-                                 <button class="btn btn-sm btn-outline p-1 px-2" id="kt_drawer_change_transfer">Change</button>
-                                 <button class="btn btn-sm btn-light-danger btn-active-light-danger p-1 px-2">Delete</button>
+                                 <button class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1" id="kt_drawer_change_transfer">Change</button>
+                                 <button class="btn btn-sm btn-outline btn-outline-danger p-2 px-3 rounded-1">Delete</button>
                               </div>
                            </div>
                            </div>
@@ -720,7 +724,10 @@
                                        <span class="text-secondary fs-8">Toyota Camry, Hyundai Sonata or similar</span>
                                        <div class="mt-2"><img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/guest-purple.png" alt="passenger" width="12" height="12"> 3 Passengers</div>
                                  </div>
-                                 <a href="transfer-modify.html" class="btn btn-sm btn-outline p-1 px-2">Change</a>
+                                 <div class="d-flex gap-2">
+                                    <a href="transfer-modify.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1">Change</a>
+                                    <button class="btn btn-sm btn-outline btn-outline-danger p-2 px-3 rounded-1">Delete</button>
+                                 </div>
                               </div>
                               <div class="d-flex flex-column flex-md-row gap-4">
                                  <div class="symbol symbol-150px symbol-2by3 w-100 w-md-auto">
@@ -734,7 +741,10 @@
                                                 <span class="text-secondary fs-8">Toyota Camry, Hyundai Sonata or similar</span>
                                                 <div class="mt-1"><img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/guest-purple.png" alt="passenger" width="12" height="12"> 3 Passengers</div>
                                           </div>
-                                          <a href="transfer-modify.html" class="btn btn-sm btn-outline p-1 px-2">Change</a>
+                                          <div class="d-flex gap-2">
+                                             <a href="transfer-modify.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1">Change</a>
+                                             <button class="btn btn-sm btn-outline btn-outline-danger p-2 px-3 rounded-1">Delete</button>
+                                          </div>
                                        </div>
                                        <div class="row d-flex justify-content-between align-items-center flex-1 flight-check">
                                           <!-- begin::check-in -->
@@ -820,7 +830,7 @@
                                  <!-- end::payment-option -->
                                  <!-- begin::payment-price -->
                                  <div class="text-end w-100 w-md-auto">
-                                    <button data-bs-toggle="modal" data-bs-target="#activityDateModal" class="btn btn-outline btn-outline-secondary btn-active-primary fw-bold detail-btn w-100 w-md-150px fs-8 fs-md-6"> Add Transfer </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#activityDateModal" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 w-100 w-md-150px detail-btn"> Add Transfer </button>
                                  </div>
                                  <!-- end::payment-price -->
                               </div>
@@ -843,9 +853,9 @@
                            </div>
                            <div class="d-flex align-items-start">
                               <div class="d-flex gap-3 ms-auto">
-                                 <a href="activity-detail.html" class="btn btn-sm btn-light-primary btn-active-light-primary p-1 px-2">Detail</a>
-                                 <a href="add-activity.html" class="btn btn-sm btn-outline p-1 px-2">Change</a>
-                                 <button class="btn btn-sm btn-light-danger btn-active-light-danger p-1 px-2">Delete</button>
+                                 <a href="activity-detail.html" class="btn btn-primary fs-6 text-white fw-medium rounded-2 py-2 px-4">Detail</a>
+                                 <a href="add-activity.html" class="btn btn-sm btn-outline btn-outline-secondary p-2 px-3 rounded-1">Change</a>
+                                 <button class="btn btn-sm btn-outline btn-outline-danger p-2 px-3 rounded-1">Delete</button>
                               </div>
                            </div>
                            </div>
@@ -863,7 +873,7 @@
                                  <!-- end::payment-option -->
                                  <!-- begin::payment-price -->
                                  <div class="text-end w-100 w-md-auto">
-                                    <button data-bs-toggle="modal" data-bs-target="#activityDateModal" class="btn btn-outline btn-outline-secondary btn-active-primary fw-bold detail-btn w-100 w-md-150px fs-8 fs-md-6"> Add activity </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#activityDateModal" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 w-100 w-md-150px detail-btn"> Add activity </button>
                                  </div>
                                  <!-- end::payment-price -->
                               </div>
@@ -871,8 +881,8 @@
                            </div>
                            <!-- end::activity -->
                            <!-- begin::visa -->
-                           <h2 id="visa" class="my-5">Visa Detail</h2>
-                           <div class="card rounded-1 p-5" style="box-shadow: 1px 1px 5px var(--bs-primary);">
+                           <!-- <h2 id="visa" class="my-5">Visa Detail</h2> -->
+                           <!-- <div class="card rounded-1 p-5" style="box-shadow: 1px 1px 5px var(--bs-primary);">
                               <div class="card-header flex-column-reverse flex-md-row align-items-start min-h-1px p-0 pb-5">
                                  <div class="d-flex align-items-start gap-1">
                                     <div class="bg-light-cyan border border-1 border-light-cyan rounded-circle p-3 me-3"><img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/visa-blue.svg" alt="visa" width="19" height="19"></div>
@@ -931,7 +941,7 @@
                                     </div>
                                  </div>
                               </div>
-                           </div>
+                           </div> -->
                            <!-- end::visa -->
                         </div>
                      </div>
@@ -1354,7 +1364,7 @@
                      <div class="d-flex justify-content-end align-items-end flex-column" data-bs-toggle="collapse"
                         href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
                         <div class="d-flex align-items-end gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold">
-                           <span class="fw-normal sar-price">S</span><span>1,408.00</span>
+                           <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
                         </div>
                         <div class="fs-8 text-secondary fw-normal">Inclusive of all taxes</div>
                      </div>
@@ -1396,8 +1406,8 @@
                      <!-- begin::package include -->
                      <div class="mb-3">
                         <div class="separator mb-2 d-none d-lg-block"></div>
-                        <p class="text-center fs-7 fw-bold">Package Includes</p>
-                        <div class="d-flex flex-wrap justify-content-end gap-7 fs-8">
+                        <p class="text-left fs-7 fw-bold">Package Includes</p>
+                        <div class="d-flex flex-wrap justify-content-start gap-7 fs-8">
                            <div class="d-flex flex-column align-items-center gap-1">
                               <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/car.png" alt="car" width="22">
                               <span>Transfer</span>
@@ -1491,11 +1501,11 @@
                            <div class="tz-icon-share icon-18x"></div>
                         </a>
 
-                        <a href="javascript:;"
+                        <!-- <a href="javascript:;"
                            class="btn-quotation-download d-none d-lg-block"
                            data-useremail="" data-username="">
                            <img src="https://media.umrahme.com/qa/saas/assets/media/icons/pdf-icon.png" alt="file" width="22">
-                        </a>
+                        </a> -->
                      </div>
                     
                      <div class="d-flex justify-content-between align-items-center gap-2 flex-1">
@@ -1511,7 +1521,7 @@
                         <div class="d-flex d-lg-none justify-content-end align-items-end flex-column flex-1" data-bs-toggle="collapse"
                         href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
                            <div class="d-flex align-items-end gap-1 fs-2x fw-bold">
-                              <span class="fw-normal sar-price">S</span><span>1,408.00</span>
+                              <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
                            </div>
                            <div class="fs-9 text-secondary fw-normal">Inclusive of all taxes</div>
                         </div>
@@ -3672,7 +3682,7 @@
                                                         <div class="w-100 text-start text-md-end pt-0 pt-md-4 mt-auto">
                                                             <!-- <span class="fs-base text-secondary fw-medium mb-1 d-block"><del class="fs-5 fs-lg-8 fs-xl-7"> SAR 1,690.00</del></span> -->
                                                             <div class="text-dark fs-1 fs-large fw-medium d-flex align-items-center justify-content-start justify-content-md-end">
-                                                                <span class="sar-price">S</span><span> 1,408.00 </span>
+                                                                <span class="sar-price">SAR</span><span> 1,408.00 </span>
                                                             </div>
                                                             <div class="w-100 fs-six text-secondary mb-1">
                                                                 Including taxes and fees
@@ -3812,7 +3822,7 @@
                                                         <div class="w-100 text-start text-md-end pt-0 pt-md-4 mt-auto">
                                                             <!-- <span class="fs-base text-secondary fw-medium mb-1 d-block"><del class="fs-5 fs-lg-8 fs-xl-7"> SAR 1,690.00</del></span> -->
                                                             <div class="text-dark fs-1 fs-large fw-medium d-flex align-items-center justify-content-start justify-content-md-end">
-                                                                <span class="sar-price">S</span><span> 1,408.00 </span>
+                                                                <span class="sar-price">SAR</span><span> 1,408.00 </span>
                                                             </div>
                                                             <div class="w-100 fs-six text-secondary mb-1">
                                                                 Including taxes and fees
@@ -6240,7 +6250,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,167.49
+                                                        <span class="fw-medium sar-price">SAR</span> 1,167.49
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6263,7 +6273,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6286,7 +6296,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6309,7 +6319,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,932.62
+                                                        <span class="fw-medium sar-price">SAR</span> 1,932.62
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6423,7 +6433,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,167.49
+                                                        <span class="fw-medium sar-price">SAR</span> 1,167.49
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6446,7 +6456,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6469,7 +6479,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,648.06
+                                                        <span class="fw-medium sar-price">SAR</span> 1,648.06
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6492,7 +6502,7 @@
                                             <div class="d-flex flex-column justify-content-between gap-2 gap-md-5">
                                                 <div class="d-flex flex-column">
                                                     <div class="fs-2x fw-bold lh-1 text-dark mb-1">
-                                                        <span class="fw-medium sar-price">S</span> 1,932.62
+                                                        <span class="fw-medium sar-price">SAR</span> 1,932.62
                                                     </div>
                                                     <span class="fs-8 text-secondary me-6">Including taxes and fees</span>
                                                 </div>
@@ -6580,7 +6590,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">s</span>
+                                    <span class="sar-price">SAR</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6595,7 +6605,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">s</span>
+                                    <span class="sar-price">SAR</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6611,13 +6621,13 @@
                             <div class="d-flex flex-column">
                                 <div class="d-flex">
                                     <div class="d-flex align-items-center text-secondary fs-6 text-decoration-line-through gap-1">
-                                        <span class="sar-price">s</span>
+                                        <span class="sar-price">SAR</span>
                                         <span>1738.27</span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
                                     <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                        <span class="sar-price">s</span>
+                                        <span class="sar-price">SAR</span>
                                         <span>1600.27</span>
                                     </div>
                                 </div>
@@ -6638,7 +6648,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">s</span>
+                                    <span class="sar-price">SAR</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6653,7 +6663,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">s</span>
+                                    <span class="sar-price">SAR</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6668,7 +6678,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="d-flex align-items-center text-blue fs-4 gap-1">
-                                    <span class="sar-price">s</span>
+                                    <span class="sar-price">SAR</span>
                                     <span>1738.27</span>
                                 </div>
                             </div>
@@ -6810,7 +6820,7 @@
         <div class="d-flex flex-stack hotel-proces fixed-bottom start-0 end-0 bg-white p-5 shadow-sm d-lg-none">
             <div class="d-flex align-items-start align-items-md-end justify-content-end flex-column">
                 <div class="fs-1 fw-bold lh-1 text-dark d-flex justify-content-end align-items-end mb-0" data-bs-toggle="collapse" data-bs-target="#detailPrice" aria-expanded="false" aria-controls="detailPrice">
-                    <span class="fw-medium sar-price">S</span> 1,408.00
+                    <span class="fw-medium sar-price">SAR</span> 1,408.00
                 </div>
                 <span class="fs-8 text-secondary me-1">Including taxes and fees</span>
             </div>
@@ -7862,7 +7872,43 @@
    </script> -->
 
      <script>
+       // Sync detail nav active tab with section id (overview, flight, hotel, etc.)
+       function setDetailNavActive(sectionId) {
+         const navbar = document.querySelector("#navbar-detail");
+         if (!navbar) return;
+         navbar.querySelectorAll("a.nav-link[href^='#']").forEach(function(a) {
+           a.classList.toggle("active", a.getAttribute("href") === "#" + sectionId);
+         });
+       }
+
+       // On load: if URL has a hash, highlight the correct tab and scroll to section
+       (function initDetailNavFromHash() {
+         var hash = location.hash.slice(1);
+         if (!hash) return;
+         var target = document.getElementById(hash);
+         if (target) {
+           setDetailNavActive(hash);
+           target.scrollIntoView({ behavior: "smooth", block: "start" });
+           setTimeout(function() { setDetailNavActive(location.hash.slice(1) || hash); }, 650);
+         }
+       })();
+
        document.addEventListener("click", function(e) {
+    // Detail nav: always scroll to section when clicking Overview, Flights, Hotels, etc. (fixes no scroll when at top or same hash)
+    const navLink = e.target.closest("#navbar-detail a[href^='#']");
+    if (navLink && navLink.getAttribute("href").length > 1) {
+      const id = navLink.getAttribute("href").slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.replaceState(null, null, "#" + id);
+        setDetailNavActive(id);
+        // Re-apply active tab after smooth scroll ends so scrollspy doesn’t switch to another section
+        setTimeout(function() { setDetailNavActive(location.hash.slice(1) || id); }, 650);
+      }
+    }
+
     if (e.target.classList.contains("toggle-btn")) {
       const parent = e.target.closest(".read-more");
       const dots = parent.querySelector(".dots");

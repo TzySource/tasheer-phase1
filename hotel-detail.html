@@ -13,24 +13,28 @@
     <link rel="stylesheet" href="https://tasheer-phase1.tzy-source.workers.dev/assets/css/tasheer-utility.css">
    <link rel="stylesheet" href="https://tasheer-phase1.tzy-source.workers.dev/assets/css/package-style.min.css">
    <link rel="stylesheet" href="https://tasheer-phase1.tzy-source.workers.dev/assets/css/tasheer-package.css">
+   <style>
+      body.hotel-detail-page { padding-top: 0; margin-top: 0; }
+      body.hotel-detail-page .container-xl:first-of-type { padding-top: 0; }
+   </style>
 </head>
-<body>
-    <div class="container-xl px-2 px-md-9 px-lg-10 px-xxl-0">
+<body class="hotel-detail-page">
+    <div class="container-xl px-2 px-md-9 px-lg-10 px-xxl-0 pt-0">
          <!-- begin::back button -->
-         <a href="detail.html" class="text-dark d-none d-md-inline-flex mb-5 back-to-details">
+         <a href="detail.html" class="text-dark d-none d-md-inline-flex mt-3 mt-md-4 mb-2 back-to-details">
             <span class="tz-icon-arrow-left icon-16x d-inline-block"></span>
             Back to Package Details
          </a>
          <!-- end::back button -->
          <!-- begin::hotel name -->
-         <div class="d-flex flex-stack">
-            <h2 class="fs-lg-11 text-dark">
+         <div class="d-flex flex-stack mt-0">
+            <h2 class="fs-lg-11 text-dark mb-0">
                Makarem Al Bait Hotel
             </h2>
          </div>
          <!-- end::hotel name -->
          <!-- begin::hotel details -->
-         <div class="detail-content mt-md-6 mt-3">
+         <div class="detail-content mt-md-6 mt-2">
             <div class="d-flex flex-wrap align-items-center mb-3 mb-md-0">
                 <div class="me-2 mb-3 mb-md-7">
                         <img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/star-fill.png" alt="star-fill" class="w-18px h-18px">
@@ -85,7 +89,7 @@
         </div>
 
         <div class="detail-tabs-outer pt-3 pt-lg-0 pkg-hotel-details-nav-bar" style="background-color: rgb(241, 243, 248); position: sticky;">
-         <div class="container-xl container-fluid px-8 px-md-0 detail-tabs mt-xl-12 mt-8 navbar-hotel-detail" id="navbar-hotel-detail">
+         <!-- <div class="container-xl container-fluid px-8 px-md-0 detail-tabs mt-xl-12 mt-8 navbar-hotel-detail" id="navbar-hotel-detail">
              <ul class="nav nav-tabs">
 
 
@@ -119,14 +123,14 @@
                      <a class="nav-link fs-xl-6 fs-7" href="#hotelPolicies"><span class="d-inline-block tz-icon-policy icon-20x me-3"></span>Policies</a>
                  </li>
              </ul>
-         </div>
+         </div> -->
          </div>
 
          <div class="container-xl container-fluid px-8 px-md-0 detail-product">
             <div class="row mx-0">
                <div data-bs-spy="scroll" data-bs-target="#navbar-hotel-detail" data-bs-root-margin="0px 0px -0%" data-bs-smooth-scroll="true" class="scrollspy-example col-lg-8 pe-2 pe-md-6 tab-content mb-md-21 rounded-2" tabindex="0">
                   <div class="hotel-room-detail" id="hotelRoom">
-                     <div class="mb-10">
+                     <div class="mb-10 pt-8">
                         <div class="font-lg fw-medium mb-one">More Rooms options</div>
                         <div class="card hotel-detail-card shadow-sm rounded-2 mb-7">
                            <div class="card-body p-5 d-flex flex-column flex-xl-row gap-6 hotel-card-container">
@@ -151,12 +155,12 @@
                                <!-- RIGHT: HOTEL INFO -->
                                <div class="flex-grow-1">
 
-                               <div class="d-flex flex-column justify-content-between align-items-start h-100">
+                               <div class="d-flex flex-column justify-content-start align-items-start">
                                    <div class="d-flex flex-stack w-100">
                                        <div class="text-green"><img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/starfill.png" alt="star" width="14" height="14"> Luxury</div>
                                        <div class="badge bg-light-green text-green fs-7 fw-medium px-3">Lower than Market</div>
                                    </div>
-                                   <div class="mt-7">
+                                   <div class="mt-3">
                                        <h5 class="mb-0">Makarem Al Bait Hotel</h5>
                                        <div class="d-flex gap-1 rating my-2">
                                            <i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill-empty icon-14x"></i>
@@ -218,7 +222,7 @@
                                           <div class="mt-auto">
                                              <div class="fs-7 text-secondary fw-normal mb-1">Price</div>
                                              <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green mb-1">
-                                                <span class="fw-normal sar-price">S</span><span>+27.80</span>
+                                                <span class="fw-normal sar-price">SAR</span><span>+27.80</span>
                                              </div>
                                              <div class="fs-8 text-secondary fw-normal mb-4">Inclusive of all taxes</div>
                                              <a href="detail.html" class="btn btn-sm btn-primary p-2 px-3 rounded-1 w-100">Select Room</a>
@@ -238,7 +242,7 @@
                                           <div class="mt-auto">
                                              <div class="fs-7 text-secondary fw-normal mb-1">Price</div>
                                              <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green mb-1">
-                                                <span class="fw-normal sar-price">S</span><span>+48.46</span>
+                                                <span class="fw-normal sar-price">SAR</span><span>+48.46</span>
                                              </div>
                                              <div class="fs-8 text-secondary fw-normal mb-4">Inclusive of all taxes</div>
                                              <a href="detail.html" class="btn btn-sm btn-primary p-2 px-3 rounded-1 w-100">Select Room</a>
@@ -257,7 +261,7 @@
                                           <div class="mt-auto">
                                              <div class="fs-7 text-secondary fw-normal mb-1">Price</div>
                                              <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green mb-1">
-                                                <span class="fw-normal sar-price">S</span><span>+79.31</span>
+                                                <span class="fw-normal sar-price">SAR</span><span>+79.31</span>
                                              </div>
                                              <div class="fs-8 text-secondary fw-normal mb-4">Inclusive of all taxes</div>
                                              <a href="detail.html" class="btn btn-sm btn-primary p-2 px-3 rounded-1 w-100">Select Room</a>
@@ -293,12 +297,12 @@
                             <!-- RIGHT: HOTEL INFO -->
                             <div class="flex-grow-1">
 
-                            <div class="d-flex flex-column justify-content-between align-items-start h-100">
-                                <div class="d-flex flex-stack w-100">
-                                    <div class="text-green"><img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/starfill.png" alt="star" width="14" height="14"> Luxury</div>
-                                    <div class="badge bg-light-green text-green fs-7 fw-medium px-3">Lower than Market</div>
-                                </div>
-                                <div class="mt-7">
+<div class="d-flex flex-column justify-content-start align-items-start">
+                                    <div class="d-flex flex-stack w-100">
+                                        <div class="text-green"><img src="https://dyckgeltpx9qa.cloudfront.net/qa/tasheer/assets/media/icons/starfill.png" alt="star" width="14" height="14"> Luxury</div>
+                                        <div class="badge bg-light-green text-green fs-7 fw-medium px-3">Lower than Market</div>
+                                    </div>
+                                    <div class="mt-3">
                                     <h5 class="mb-0">Makarem Al Bait Hotel</h5>
                                     <div class="d-flex gap-1 rating my-2">
                                         <i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill icon-14x"></i><i class="tz-icon-star-fill-empty icon-14x"></i>
@@ -360,7 +364,7 @@
                                        <div class="mt-auto">
                                           <div class="fs-7 text-secondary fw-normal mb-1">Price</div>
                                           <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green mb-1">
-                                             <span class="fw-normal sar-price">S</span><span>+27.80</span>
+                                             <span class="fw-normal sar-price">SAR</span><span>+27.80</span>
                                           </div>
                                           <div class="fs-8 text-secondary fw-normal mb-4">Inclusive of all taxes</div>
                                           <a href="detail.html" class="btn btn-sm btn-primary p-2 px-3 rounded-1 w-100">Select Room</a>
@@ -380,7 +384,7 @@
                                        <div class="mt-auto">
                                           <div class="fs-7 text-secondary fw-normal mb-1">Price</div>
                                           <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green mb-1">
-                                             <span class="fw-normal sar-price">S</span><span>+48.46</span>
+                                             <span class="fw-normal sar-price">SAR</span><span>+48.46</span>
                                           </div>
                                           <div class="fs-8 text-secondary fw-normal mb-4">Inclusive of all taxes</div>
                                           <a href="detail.html" class="btn btn-sm btn-primary p-2 px-3 rounded-1 w-100">Select Room</a>
@@ -399,7 +403,7 @@
                                        <div class="mt-auto">
                                           <div class="fs-7 text-secondary fw-normal mb-1">Price</div>
                                           <div class="d-flex gap-1 fs-2 fw-bold lh-1 text-green mb-1">
-                                             <span class="fw-normal sar-price">S</span><span>+79.31</span>
+                                             <span class="fw-normal sar-price">SAR</span><span>+79.31</span>
                                           </div>
                                           <div class="fs-8 text-secondary fw-normal mb-4">Inclusive of all taxes</div>
                                           <a href="detail.html" class="btn btn-sm btn-primary p-2 px-3 rounded-1 w-100">Select Room</a>
@@ -419,10 +423,10 @@
                      <div class="card bg-white rounded-2 d-flex p-5 p-lg-8 price-card">
                         <!-- begin::card-header -->
                         <div class="card-header d-none d-lg-block border-0 px-0 min-h-1px">
-                           <div class="d-flex justify-content-end align-items-end flex-column" data-bs-toggle="collapse"
+                           <div class="d-flex justify-content-start align-items-start flex-column" data-bs-toggle="collapse"
                               href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
                               <div class="d-flex align-items-end gap-1 fs-2tx fs-md-1 fs-lg-2qx fw-bold">
-                                 <span class="fw-normal sar-price">S</span><span>1,408.00</span>
+                                 <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
                               </div>
                               <div class="fs-8 text-secondary fw-normal">Inclusive of all taxes</div>
                            </div>
@@ -464,8 +468,8 @@
                            <!-- begin::package include -->
                            <div class="mb-3">
                               <div class="separator mb-2 d-none d-lg-block"></div>
-                              <p class="text-center fs-7 fw-bold">Package Includes</p>
-                              <div class="d-flex flex-wrap justify-content-end gap-7 fs-8">
+                              <p class="text-left fs-7 fw-bold">Package Includes</p>
+                              <div class="d-flex flex-wrap justify-content-start gap-7 fs-8">
                                  <div class="d-flex flex-column align-items-center gap-1">
                                     <img src="https://dyckgeltpx9qa.cloudfront.net/prod/tasheer/assets/media/icons/car.png" alt="car" width="22">
                                     <span>Transfer</span>
@@ -553,16 +557,21 @@
                         </div>
                         <!-- end::card-body -->
                         <!-- begin::card-footer -->
-                        <div class="card-footer p-0 pt-lg-4 border-0 d-flex gap-3 flex-stack"> 
+                        <div class="card-footer p-0 pt-lg-4 border-0 d-flex gap-3 flex-stack">
+                           <div class="d-flex gap-2 ">
+                              <a href="javascript:;" class="btn btn-outline btn-active-light-secondary p-3 d-none">
+                                 <div class="tz-icon-share icon-18x"></div>
+                              </a>
+                           </div>
                            <div class="d-flex justify-content-between align-items-center gap-2 flex-1">
-
+                              <button class="btn btn-outline btn-lg fs-6 text-blue rounded-2 py-3 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#customizeModal">Modify</button>
                               <a href="../package/traveler-info.html" class="btn btn-primary btn-lg fs-6 text-white fw-medium rounded-2 py-3 flex-1">
                                  Book
                               </a>
                               <div class="d-flex d-lg-none justify-content-end align-items-end flex-column flex-1" data-bs-toggle="collapse"
                               href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
                                  <div class="d-flex align-items-end gap-1 fs-2x fw-bold">
-                                    <span class="fw-normal sar-price">S</span><span>1,408.00</span>
+                                    <span class="fw-normal sar-price">SAR</span><span>1,408.00</span>
                                  </div>
                                  <div class="fs-9 text-secondary fw-normal">Inclusive of all taxes</div>
                               </div>
@@ -585,5 +594,36 @@
    <script src="https://tasheer-phase1.tzy-source.workers.dev/assets/js/package-detail-plugin.min.js"></script>
    <!-- custom js -->
    <script src="https://tasheer-phase1.tzy-source.workers.dev/assets/js/package.js"></script>
+   <script>
+      document.addEventListener("click", function(e) {
+         if (e.target.classList.contains("toggle-btn")) {
+            var parent = e.target.closest(".read-more");
+            if (!parent) return;
+            var dots = parent.querySelector(".dots");
+            var moreText = parent.querySelector(".more-text");
+            var btn = e.target;
+            if (moreText.style.display === "inline") {
+               moreText.style.display = "none";
+               dots.style.display = "inline";
+               btn.innerText = "Read more";
+            } else {
+               moreText.style.display = "inline";
+               dots.style.display = "none";
+               btn.innerText = "Read Less";
+            }
+         }
+      });
+
+      document.querySelectorAll(".hotel-thumb").forEach(function(thumb) {
+         thumb.addEventListener("click", function() {
+            var media = this.closest(".hotel-media");
+            if (!media) return;
+            media.querySelectorAll(".hotel-thumb").forEach(function(t) { t.classList.remove("active"); });
+            this.classList.add("active");
+            var mainImg = media.querySelector(".hotel-main-image");
+            if (mainImg) mainImg.src = this.src;
+         });
+      });
+   </script>
 </body>
 </html>
